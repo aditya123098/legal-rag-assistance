@@ -1,12 +1,12 @@
 """
 ingest.py
 ----------
-Builds a FAISS vector store from the IPC/BNS legal dataset.
+Builds a FAISS vector store from the Indian cybercrime legal dataset.
 
-Each legal provision is converted into a LangChain Document with rich
-metadata (IPC section, BNS section, category, punishment, etc.) so that
-retrieved chunks carry structured fields the app can display directly,
-not just raw text.
+Each entry is converted into a LangChain Document with rich metadata
+(IT Act sections, IPC sections, BNS sections, category, punishment, etc.)
+so that retrieved chunks carry structured fields the app can display
+directly, not just raw text.
 
 Run this once (or whenever data/ipc_bns_sections.json changes):
     python src/ingest.py
@@ -35,28 +35,40 @@ def load_sections(path: Path) -> list[dict]:
 
 def build_documents(sections: list[dict]) -> list[Document]:
     """
-    Convert each legal section into a Document. We embed a composite string
-    (title + category + text) so semantic search captures both the legal
-    concept and the plain-language description, while keeping the full
-    structured record in metadata for display in the UI.
+    Convert each legal entry into a Document. We embed a composite string
+    (situation + category + explanation + sections) so semantic search
+    captures the legal concept, applicable laws, and the plain-language
+    description, while keeping the full structured record in metadata
+    for display in the UI.
     """
     docs = []
     for sec in sections:
+        # Build a rich text representation for embedding
+        it_act_str = "; ".join(sec.get("it_act_sections", []))
+        ipc_str = "; ".join(sec.get("ipc_sections", []))
+        bns_str = "; ".join(sec.get("bns_sections", []))
+
         page_content = (
-            f"{sec['title']}. Category: {sec['category']} - {sec['subcategory']}. "
-            f"{sec['text']}"
+            f"Situation: {sec['situation']}\n"
+            f"Category: {sec['category']}\n"
+            f"Is Cybercrime: {'Yes' if sec.get('is_cybercrime', False) else 'No'}\n"
+            f"IT Act Sections: {it_act_str or 'None'}\n"
+            f"IPC Sections: {ipc_str or 'None'}\n"
+            f"BNS Sections: {bns_str or 'None'}\n"
+            f"Explanation: {sec['explanation']}\n"
+            f"Punishment: {sec['punishment']}"
         )
+
         metadata = {
             "id": sec["id"],
-            "ipc_section": sec["ipc_section"],
-            "bns_section": sec["bns_section"],
+            "situation": sec["situation"],
+            "is_cybercrime": sec.get("is_cybercrime", False),
             "category": sec["category"],
-            "subcategory": sec["subcategory"],
-            "title": sec["title"],
+            "it_act_sections": it_act_str,
+            "ipc_sections": ipc_str,
+            "bns_sections": bns_str,
+            "explanation": sec["explanation"],
             "punishment": sec["punishment"],
-            "cognizable": sec["cognizable"],
-            "bailable": sec["bailable"],
-            "triable_by": sec["triable_by"],
         }
         docs.append(Document(page_content=page_content, metadata=metadata))
     return docs
@@ -64,13 +76,13 @@ def build_documents(sections: list[dict]) -> list[Document]:
 
 def chunk_documents(docs: list[Document]) -> list[Document]:
     """
-    Sections here are short enough that most won't actually split, but we
-    keep a splitter in the pipeline so the system scales cleanly once you
-    swap in the full IPC/BNS corpus (which will have much longer sections).
+    Entries here are short enough that most won't actually split, but we
+    keep a splitter in the pipeline so the system scales cleanly if you
+    add longer entries in the future.
     """
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=800,
-        chunk_overlap=100,
+        chunk_size=1200,
+        chunk_overlap=150,
         separators=["\n\n", "\n", ". ", " "],
     )
     return splitter.split_documents(docs)
@@ -79,7 +91,7 @@ def chunk_documents(docs: list[Document]) -> list[Document]:
 def main():
     print(f"Loading legal sections from {DATA_PATH} ...")
     sections = load_sections(DATA_PATH)
-    print(f"Loaded {len(sections)} sections.")
+    print(f"Loaded {len(sections)} entries.")
 
     docs = build_documents(sections)
     chunks = chunk_documents(docs)

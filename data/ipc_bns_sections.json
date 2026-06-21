@@ -1,262 +1,2342 @@
 [
   {
-    "id": "murder",
-    "category": "Offences Against Human Body",
-    "subcategory": "Murder",
-    "ipc_section": "IPC Section 302",
-    "bns_section": "BNS Section 103",
-    "title": "Punishment for Murder",
-    "text": "Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine. Murder is defined under IPC Section 300 / BNS Section 101 as culpable homicide where the act is done with the intention of causing death, or with the intention of causing such bodily injury as the offender knows to be likely to cause death, or where the act is so imminently dangerous that it must, in all probability, cause death.",
-    "punishment": "Death penalty or life imprisonment, plus fine",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Court of Session"
+    "id": 1,
+    "situation": "Someone gained unauthorized access to my company's server and copied confidential files without permission.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (penalty for damage to computer system)",
+      "Section 66 (computer related offences)"
+    ],
+    "ipc_sections": [
+      "Section 379 (theft) - legacy reference",
+      "Section 405 (criminal breach of trust) - legacy reference"
+    ],
+    "bns_sections": [
+      "Section 303 BNS (theft)",
+      "Section 316 BNS (criminal breach of trust)"
+    ],
+    "explanation": "Unauthorized access to a computer system or network and extraction of data without the owner's permission falls squarely under hacking provisions of the IT Act. Section 43 covers the civil penalty for unauthorized access, downloading, or copying of data, while Section 66 criminalizes the same act when done dishonestly or fraudulently, as defined with reference to Sections 24 and 25 of the Indian Penal Code/BNS (dishonesty and fraud).",
+    "punishment": "Under Section 66 IT Act: imprisonment up to 3 years, or fine up to Rs. 5 lakh, or both. Section 43 allows for compensation to be paid to the affected party as determined by an adjudicating officer."
   },
   {
-    "id": "culpable_homicide",
-    "category": "Offences Against Human Body",
-    "subcategory": "Culpable Homicide Not Amounting to Murder",
-    "ipc_section": "IPC Section 304",
-    "bns_section": "BNS Section 105",
-    "title": "Punishment for Culpable Homicide Not Amounting to Murder",
-    "text": "Whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine, if the act is done with the intention of causing death or bodily injury likely to cause death. If the act is done without such intention but with knowledge that it is likely to cause death, punishment may extend to ten years, or fine, or both.",
-    "punishment": "Up to life imprisonment or up to 10 years, plus possible fine",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Court of Session"
+    "id": 2,
+    "situation": "A former employee logged into our company database using his old credentials after he was terminated and deleted important records.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (damage to computer system)",
+      "Section 66 (computer related offences)",
+      "Section 66F (cyber terrorism, if scale is large) - not typically applicable here"
+    ],
+    "ipc_sections": [
+      "Section 425/426 (mischief) - legacy reference",
+      "Section 405 (criminal breach of trust) - legacy reference"
+    ],
+    "bns_sections": [
+      "Section 324 BNS (mischief)",
+      "Section 316 BNS (criminal breach of trust)"
+    ],
+    "explanation": "Accessing a computer resource without authorization (since access rights were revoked upon termination) and causing deletion or alteration of data constitutes both unauthorized access and data damage under Section 43, punishable under Section 66. The act may also amount to criminal breach of trust if the employee was in a position of trust regarding that data.",
+    "punishment": "Imprisonment up to 3 years and/or fine up to Rs. 5 lakh under Section 66 IT Act. Additional civil liability for damages under Section 43."
   },
   {
-    "id": "theft",
-    "category": "Offences Against Property",
-    "subcategory": "Theft",
-    "ipc_section": "IPC Section 378 / 379",
-    "bns_section": "BNS Section 303",
-    "title": "Theft and Punishment for Theft",
-    "text": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft. Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. In case of theft in a dwelling house, the punishment may extend to seven years under the amended provisions.",
-    "punishment": "Up to 3 years imprisonment, or fine, or both (up to 7 years for theft in a dwelling house)",
-    "cognizable": true,
-    "bailable": true,
-    "triable_by": "Magistrate"
+    "id": 3,
+    "situation": "My Instagram account was hacked and the hacker changed my password and is now posting offensive content from my profile.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)",
+      "Section 66C (identity theft)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation) - legacy reference"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)"
+    ],
+    "explanation": "Gaining unauthorized control of someone's social media account by changing credentials constitutes hacking under Section 66, and using that account to post content while impersonating the victim attracts identity theft under Section 66C, since it involves fraudulent or dishonest use of another person's electronic signature, password, or unique identification.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Section 66C: up to 3 years imprisonment and fine up to Rs. 1 lakh."
   },
   {
-    "id": "robbery",
-    "category": "Offences Against Property",
-    "subcategory": "Robbery",
-    "ipc_section": "IPC Section 392",
-    "bns_section": "BNS Section 309",
-    "title": "Punishment for Robbery",
-    "text": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. If the robbery is committed on the highway between sunset and sunrise, the imprisonment may extend to fourteen years. Robbery is theft or extortion committed with the additional element of voluntarily causing or attempting to cause death, hurt, wrongful restraint, or fear of instant death/hurt.",
-    "punishment": "Up to 10 years rigorous imprisonment plus fine (up to 14 years for highway robbery at night)",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Magistrate of First Class / Court of Session"
+    "id": 4,
+    "situation": "An unknown person accessed my email account and read my private conversations without my knowledge or consent.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)",
+      "Section 72 (breach of confidentiality and privacy, if applicable to intermediary/authority)"
+    ],
+    "ipc_sections": [
+      "Section 354D (stalking, if repeated) - legacy reference, context dependent"
+    ],
+    "bns_sections": [
+      "Section 78 BNS (stalking, if repeated and applicable)"
+    ],
+    "explanation": "Unauthorized access to a private email account, even without altering data, is penalized under Section 43(a) for accessing a computer resource without permission, and criminally under Section 66. If the access is part of a pattern of monitoring, stalking provisions may also apply.",
+    "punishment": "Up to 3 years imprisonment and/or fine up to Rs. 5 lakh under Section 66 IT Act."
   },
   {
-    "id": "dacoity",
-    "category": "Offences Against Property",
-    "subcategory": "Dacoity",
-    "ipc_section": "IPC Section 395",
-    "bns_section": "BNS Section 310",
-    "title": "Punishment for Dacoity",
-    "text": "When five or more persons conjointly commit or attempt to commit a robbery, every person so committing, attempting, or aiding is said to commit dacoity. Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
-    "punishment": "Life imprisonment or up to 10 years rigorous imprisonment, plus fine",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Court of Session"
+    "id": 5,
+    "situation": "I found out someone installed a keylogger on my office laptop to monitor everything I type, including my banking passwords.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access/introduction of contaminant)",
+      "Section 66 (computer related offences)",
+      "Section 66C (identity theft, if passwords were used)"
+    ],
+    "ipc_sections": [
+      "Section 463/465 (forgery, if data is misused) - legacy reference"
+    ],
+    "bns_sections": [
+      "Section 336 BNS (forgery, if data is misused)"
+    ],
+    "explanation": "Installing a keylogger without consent to capture sensitive information like banking credentials qualifies as introducing a computer contaminant and unauthorized access under Section 43, punishable under Section 66. If captured credentials are subsequently used, Section 66C (identity theft) applies as well.",
+    "punishment": "Up to 3 years imprisonment and/or fine up to Rs. 5 lakh under Section 66; up to 3 years and fine up to Rs. 1 lakh under Section 66C if credentials were misused."
   },
   {
-    "id": "criminal_breach_of_trust",
-    "category": "Offences Against Property",
-    "subcategory": "Criminal Breach of Trust",
-    "ipc_section": "IPC Section 406",
-    "bns_section": "BNS Section 316",
-    "title": "Punishment for Criminal Breach of Trust",
-    "text": "Whoever, being entrusted with property or with dominion over property, dishonestly misappropriates or converts it to their own use, or dishonestly uses or disposes of it in violation of any direction of law or contract, commits criminal breach of trust. Punishment is imprisonment of either description for a term which may extend to three years, or fine, or both. Enhanced punishment of up to seven or ten years applies where the offender is a public servant, banker, or in a position of trust such as a carrier or agent.",
-    "punishment": "Up to 3 years (basic); up to 7-10 years for aggravated cases involving public servants, bankers, or agents",
-    "cognizable": false,
-    "bailable": true,
-    "triable_by": "Magistrate"
+    "id": 6,
+    "situation": "My neighbor uses my home WiFi without permission because I never changed the default password, but he hasn't caused any damage.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access to computer resource)",
+      "Section 66 (if dishonest intent is shown)"
+    ],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Even passive unauthorized use of a WiFi network without the owner's consent technically falls under Section 43(a) of the IT Act, which penalizes accessing or securing access to a computer, computer system, or network without permission. However, in practice, such low-harm cases are often resolved informally or treated as a civil matter (compensation under Section 43) rather than pursued criminally, since criminal liability under Section 66 requires dishonest or fraudulent intent.",
+    "punishment": "Civil liability: compensation as determined by adjudicating officer under Section 43. Criminal liability under Section 66 only applies if dishonest/fraudulent intent is established, punishable up to 3 years and/or fine up to Rs. 5 lakh."
   },
   {
-    "id": "cheating",
-    "category": "Offences Against Property",
-    "subcategory": "Cheating",
-    "ipc_section": "IPC Section 420",
-    "bns_section": "BNS Section 318",
-    "title": "Cheating and Dishonestly Inducing Delivery of Property",
-    "text": "Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter, or destroy the whole or any part of a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. This section covers a wide range of fraud, including online and financial fraud cases.",
-    "punishment": "Up to 7 years imprisonment plus fine",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Magistrate of First Class"
+    "id": 7,
+    "situation": "A friend asked to borrow my laptop and I let him use it for an hour to check his email.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "This is normal, consensual use of a device. There is no unauthorized access, no data theft, and no fraudulent intent. Since the laptop owner voluntarily permitted access for a lawful purpose, none of the elements of a cybercrime under the IT Act are present.",
+    "punishment": "Not applicable - no offence is made out."
   },
   {
-    "id": "assault",
-    "category": "Offences Against Human Body",
-    "subcategory": "Assault and Criminal Force",
-    "ipc_section": "IPC Section 351 / 352",
-    "bns_section": "BNS Section 130 / 131",
-    "title": "Assault and Punishment for Assault or Criminal Force",
-    "text": "Whoever makes any gesture or preparation intending or knowing it likely that such gesture or preparation will cause any person present to apprehend that the person making it is about to use criminal force, is said to commit assault. Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation shall be punished with imprisonment for a term which may extend to three months, or fine up to one thousand rupees, or both.",
-    "punishment": "Up to 3 months imprisonment, or fine up to ₹1,000, or both",
-    "cognizable": false,
-    "bailable": true,
-    "triable_by": "Any Magistrate"
+    "id": 8,
+    "situation": "I received a call from someone claiming to be from my bank asking for my OTP, and after I shared it, Rs. 50,000 was withdrawn from my account.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating) - legacy reference"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a classic vishing (voice phishing) scam. The fraudster used the victim's OTP (a unique identification feature) to impersonate them and fraudulently access their bank account, which constitutes cheating by personation under Section 66D, alongside identity theft under Section 66C. The underlying cheating is also covered by BNS Section 318 (replacing IPC 420).",
+    "punishment": "Section 66D: imprisonment up to 3 years and fine up to Rs. 1 lakh. Section 66C: imprisonment up to 3 years and fine up to Rs. 1 lakh. BNS 318 cheating: up to 7 years depending on the specific clause."
   },
   {
-    "id": "grievous_hurt",
-    "category": "Offences Against Human Body",
-    "subcategory": "Grievous Hurt",
-    "ipc_section": "IPC Section 320 / 325",
-    "bns_section": "BNS Section 116 / 117",
-    "title": "Voluntarily Causing Grievous Hurt",
-    "text": "Grievous hurt includes emasculation, permanent loss of sight or hearing, loss of any limb or joint, permanent disfiguration of the head or face, fracture or dislocation of a bone or tooth, or any hurt which endangers life or causes severe bodily pain for twenty days. Whoever voluntarily causes grievous hurt shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
-    "punishment": "Up to 7 years imprisonment plus fine",
-    "cognizable": true,
-    "bailable": true,
-    "triable_by": "Magistrate of First Class"
+    "id": 9,
+    "situation": "I clicked on a link in an SMS that looked like it was from my bank, and it took me to a fake website that asked me to enter my net banking login details.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating) - legacy reference",
+      "Section 468 (forgery for cheating) - legacy reference"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)",
+      "Section 336 BNS (forgery)"
+    ],
+    "explanation": "This is a phishing attack where a fake website was created to impersonate a legitimate bank in order to fraudulently obtain login credentials. This squarely falls under Section 66D, which deals with cheating by personation using a computer resource, and Section 66C for identity theft.",
+    "punishment": "Up to 3 years imprisonment and fine up to Rs. 1 lakh under both Section 66C and 66D."
   },
   {
-    "id": "kidnapping",
-    "category": "Offences Against the Person (Liberty)",
-    "subcategory": "Kidnapping and Abduction",
-    "ipc_section": "IPC Section 363",
-    "bns_section": "BNS Section 137",
-    "title": "Punishment for Kidnapping",
-    "text": "Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Kidnapping from lawful guardianship applies specifically to minors (under 16 for males, under 18 for females) or persons of unsound mind, taken without the consent of the lawful guardian.",
-    "punishment": "Up to 7 years imprisonment plus fine",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Magistrate of First Class"
+    "id": 10,
+    "situation": "Someone created a fake UPI payment request and tricked me into approving it, thinking I was receiving money, but instead Rs. 10,000 got deducted from my account.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating) - legacy reference"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a 'collect request' UPI fraud, a well-known scam where victims are deceived into approving payment requests disguised as receipt requests. The deceptive use of a computer resource (UPI app) to defraud the victim attracts Section 66D of the IT Act along with cheating provisions under BNS.",
+    "punishment": "Up to 3 years imprisonment and fine up to Rs. 1 lakh under Section 66D; cheating under BNS 318 can attract imprisonment up to 7 years depending on the clause invoked."
   },
   {
-    "id": "sexual_assault",
-    "category": "Offences Against Women",
-    "subcategory": "Sexual Assault / Rape",
-    "ipc_section": "IPC Section 376",
-    "bns_section": "BNS Section 64",
-    "title": "Punishment for Rape",
-    "text": "Whoever commits rape shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine. Aggravated circumstances — including offences by persons in positions of authority, gang rape, or offences against minors — attract enhanced minimum sentences, up to life imprisonment or death in the most severe cases under related sections.",
-    "punishment": "Minimum 10 years, up to life imprisonment, plus fine (enhanced for aggravated circumstances)",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Court of Session (in-camera trial)"
+    "id": 11,
+    "situation": "I invested in a cryptocurrency scheme advertised on Telegram that promised guaranteed 30% monthly returns, and the platform vanished with my money after two months.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)",
+      "Section 406 (criminal breach of trust)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)",
+      "Section 316 BNS (criminal breach of trust)"
+    ],
+    "explanation": "Ponzi-style investment scams operated through online platforms involve cheating and criminal breach of trust facilitated through a computer resource, attracting Section 66D of the IT Act. Depending on the scale, such schemes may also attract the Prize Chits and Money Circulation Schemes (Banning) Act, 1978, and SEBI regulations if securities are involved.",
+    "punishment": "Up to 3 years imprisonment and fine up to Rs. 1 lakh under Section 66D; cheating under BNS 318 can extend up to 7 years imprisonment depending on severity."
   },
   {
-    "id": "dowry_death",
-    "category": "Offences Against Women",
-    "subcategory": "Dowry Death",
-    "ipc_section": "IPC Section 304B",
-    "bns_section": "BNS Section 80",
-    "title": "Dowry Death",
-    "text": "Where the death of a woman is caused by burns, bodily injury, or otherwise than under normal circumstances within seven years of marriage, and it is shown that soon before her death she was subjected to cruelty or harassment for dowry, such death is called dowry death. The husband or relative shall be deemed to have caused her death and punished with imprisonment for a term not less than seven years, which may extend to imprisonment for life.",
-    "punishment": "Minimum 7 years, up to life imprisonment",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Court of Session"
+    "id": 12,
+    "situation": "I received an email saying I won a lottery of $1 million and need to pay a processing fee to claim it, and I'm worried this might be a scam.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This describes a classic advance-fee/lottery scam sent via email. If the victim has not yet paid, this is an attempted offence; if money has already been transferred, it constitutes completed cheating via a computer resource under Section 66D of the IT Act.",
+    "punishment": "Up to 3 years imprisonment and fine up to Rs. 1 lakh under Section 66D."
   },
   {
-    "id": "criminal_intimidation",
-    "category": "Offences Against Public Tranquility / Person",
-    "subcategory": "Criminal Intimidation",
-    "ipc_section": "IPC Section 506",
-    "bns_section": "BNS Section 351",
-    "title": "Punishment for Criminal Intimidation",
-    "text": "Whoever threatens another with any injury to their person, reputation, or property, with intent to cause alarm, or to cause that person to do an act which they are not legally bound to do, commits criminal intimidation. Punishment is imprisonment up to two years, or fine, or both. Where the threat is to cause death or grievous hurt, or to destroy property by fire, or to impute unchastity to a woman, punishment may extend to seven years.",
-    "punishment": "Up to 2 years (basic); up to 7 years for aggravated threats",
-    "cognizable": false,
-    "bailable": true,
-    "triable_by": "Any Magistrate"
+    "id": 13,
+    "situation": "My company received an email that looked like it was from our CEO asking the finance team to urgently wire Rs. 25 lakh to a new vendor account, and the finance manager complied before realizing it was fake.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)",
+      "Section 465 (forgery)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)",
+      "Section 336 BNS (forgery)"
+    ],
+    "explanation": "This is Business Email Compromise (BEC), where attackers impersonate a senior executive via a spoofed or compromised email account to defraud the organization. This involves both identity theft (Section 66C) and cheating by personation through a computer resource (Section 66D).",
+    "punishment": "Up to 3 years imprisonment and fine up to Rs. 1 lakh under each of Section 66C and 66D; cheating under BNS 318 can extend up to 7 years depending on the amount and clause invoked."
   },
   {
-    "id": "defamation",
-    "category": "Offences Against Reputation",
-    "subcategory": "Defamation",
-    "ipc_section": "IPC Section 499 / 500",
-    "bns_section": "BNS Section 356",
-    "title": "Defamation and Its Punishment",
-    "text": "Whoever, by words spoken or intended to be read, or by signs or visible representations, makes or publishes any imputation concerning any person intending to harm their reputation, is said to defame that person. Whoever defames another shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both.",
-    "punishment": "Up to 2 years simple imprisonment, or fine, or both",
-    "cognizable": false,
-    "bailable": true,
-    "triable_by": "Magistrate of Second Class"
+    "id": 14,
+    "situation": "I paid my friend back Rs. 2,000 through Google Pay for dinner we had together last week.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "This is a legitimate, voluntary digital payment between two consenting individuals for a genuine transaction. There is no deception, unauthorized access, or fraudulent intent involved, so no provision of the IT Act, IPC, or BNS is attracted.",
+    "punishment": "Not applicable - no offence is made out."
   },
   {
-    "id": "forgery",
-    "category": "Offences Relating to Documents",
-    "subcategory": "Forgery",
-    "ipc_section": "IPC Section 463 / 465",
-    "bns_section": "BNS Section 336",
-    "title": "Forgery and Punishment for Forgery",
-    "text": "Whoever makes any false document or false electronic record, or part of a document, with intent to cause damage or injury, to support a claim, to commit fraud, or to enter into a contract, commits forgery. Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Forgery of valuable security, will, or authority to adopt attracts enhanced punishment up to seven or ten years.",
-    "punishment": "Up to 2 years (basic); up to 7-10 years for forgery of valuable security or wills",
-    "cognizable": false,
-    "bailable": true,
-    "triable_by": "Magistrate"
+    "id": 15,
+    "situation": "I sold my old phone to someone on OLX and we agreed on a price after some negotiation; the buyer paid the full agreed amount.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "This is a legitimate online marketplace transaction completed honestly by both parties. There is no fraud, misrepresentation, or unauthorized computer access involved.",
+    "punishment": "Not applicable - no offence is made out."
   },
   {
-    "id": "rioting",
-    "category": "Offences Against Public Tranquility",
-    "subcategory": "Unlawful Assembly and Rioting",
-    "ipc_section": "IPC Section 146 / 147",
-    "bns_section": "BNS Section 189 / 191",
-    "title": "Rioting and Its Punishment",
-    "text": "Whenever force or violence is used by an unlawful assembly, or by any member of it, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting. Whoever is guilty of rioting shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. If armed with a deadly weapon, punishment may extend to three years.",
-    "punishment": "Up to 2 years (basic); up to 3 years if armed with deadly weapon",
-    "cognizable": true,
-    "bailable": true,
-    "triable_by": "Any Magistrate"
+    "id": 16,
+    "situation": "An ex-colleague keeps sending me threatening and abusive messages on WhatsApp every day, even after I asked him to stop and blocked him on one number, since he keeps creating new numbers.",
+    "is_cybercrime": true,
+    "category": "Cyberbullying / Online Harassment / Stalking",
+    "it_act_sections": [
+      "Section 66A (struck down by Supreme Court in Shreya Singhal case, no longer applicable)",
+      "Section 67 (if obscene content is involved)"
+    ],
+    "ipc_sections": [
+      "Section 354D (stalking)",
+      "Section 506 (criminal intimidation)"
+    ],
+    "bns_sections": [
+      "Section 78 BNS (stalking)",
+      "Section 351 BNS (criminal intimidation)"
+    ],
+    "explanation": "Repeated, unwanted contact through electronic communication despite a clear request to stop constitutes cyberstalking under Section 78 of the BNS (corresponding to erstwhile IPC Section 354D), and the threatening nature of the messages attracts criminal intimidation under Section 351 BNS. Note that Section 66A of the IT Act, which previously criminalized 'offensive' online messages, was struck down as unconstitutional by the Supreme Court in Shreya Singhal v. Union of India (2015) and cannot be invoked.",
+    "punishment": "Stalking under BNS Section 78: up to 3 years for first conviction, up to 5 years for subsequent conviction, with fine. Criminal intimidation under BNS Section 351: up to 2 years, or fine, or both (up to 7 years if intimidation involves death/grievous hurt threats)."
   },
   {
-    "id": "extortion",
-    "category": "Offences Against Property",
-    "subcategory": "Extortion",
-    "ipc_section": "IPC Section 384",
-    "bns_section": "BNS Section 308",
-    "title": "Punishment for Extortion",
-    "text": "Whoever intentionally puts any person in fear of injury and thereby dishonestly induces the person so put in fear to deliver to any person any property, valuable security, or anything signed or sealed which may be converted into a valuable security, commits extortion. Whoever commits extortion shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
-    "punishment": "Up to 3 years imprisonment, or fine, or both",
-    "cognizable": true,
-    "bailable": true,
-    "triable_by": "Magistrate"
+    "id": 17,
+    "situation": "Someone created a fake Facebook profile using my photos and is sending friend requests to my contacts and posting embarrassing content as if it were me.",
+    "is_cybercrime": true,
+    "category": "Cyberbullying / Online Harassment / Stalking",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation)",
+      "Section 67 (if obscene content posted)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 500 (defamation)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 356 BNS (defamation)"
+    ],
+    "explanation": "Creating a fake profile using someone's photographs and identity to deceive others is identity theft under Section 66C and impersonation under Section 66D of the IT Act. If the content posted is damaging to reputation, defamation under BNS Section 356 also applies.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. Defamation under BNS Section 356: up to 2 years, or fine, or both, or community service."
   },
   {
-    "id": "criminal_conspiracy",
-    "category": "Offences Against Public Tranquility",
-    "subcategory": "Criminal Conspiracy",
-    "ipc_section": "IPC Section 120A / 120B",
-    "bns_section": "BNS Section 61",
-    "title": "Criminal Conspiracy and Punishment",
-    "text": "When two or more persons agree to do, or cause to be done, an illegal act, or an act which is not illegal by illegal means, such an agreement is designated criminal conspiracy. Whoever is party to a criminal conspiracy to commit an offence punishable with death, life imprisonment, or rigorous imprisonment of two years or more shall be punished in the same manner as if they had abetted the offence, where no express provision exists.",
-    "punishment": "Same as punishment for the offence conspired (where no express provision); up to 6 months/fine/both for other conspiracies",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Depends on the offence conspired"
+    "id": 18,
+    "situation": "My ex-partner has been tracking my location through a shared app we used to use and shows up wherever I go, even though we broke up months ago and I've asked him to stop.",
+    "is_cybercrime": true,
+    "category": "Cyberbullying / Online Harassment / Stalking",
+    "it_act_sections": [
+      "Section 43 (unauthorized access/monitoring, if app access wasn't revoked properly)",
+      "Section 66E (violation of privacy, if location/images captured without consent)"
+    ],
+    "ipc_sections": [
+      "Section 354D (stalking)"
+    ],
+    "bns_sections": [
+      "Section 78 BNS (stalking)"
+    ],
+    "explanation": "Monitoring a person's location electronically without consent after a relationship has ended and despite being asked to stop is a clear case of cyberstalking under BNS Section 78. If location data is being accessed through an app the victim no longer knowingly consents to, it may also raise privacy violation concerns under Section 66E of the IT Act.",
+    "punishment": "BNS Section 78: up to 3 years imprisonment for first offence (up to 5 years for repeat offence), along with fine."
   },
   {
-    "id": "cyber_fraud_identity_theft",
-    "category": "Cyber and Identity Offences",
-    "subcategory": "Identity Theft / Cheating by Personation",
-    "ipc_section": "IPC Section 419 / 420 (read with IT Act)",
-    "bns_section": "BNS Section 319",
-    "title": "Cheating by Personation",
-    "text": "Whoever cheats by pretending to be some other person, or by knowingly substituting one person for another, or representing that they or any other person is a person other than they or such other person really is, commits cheating by personation. Punishment is imprisonment of either description for a term which may extend to three years, or fine, or both. This provision is frequently applied alongside the Information Technology Act in cases of online fraud, phishing, and identity theft.",
-    "punishment": "Up to 3 years imprisonment, or fine, or both (often read with IT Act provisions for cyber offences)",
-    "cognizable": true,
-    "bailable": true,
-    "triable_by": "Magistrate"
+    "id": 19,
+    "situation": "Students in my class created a WhatsApp group where they share morphed photos of me and make fun of my appearance, and the group has spread to other classes too.",
+    "is_cybercrime": true,
+    "category": "Cyberbullying / Online Harassment / Stalking",
+    "it_act_sections": [
+      "Section 66E (violation of privacy through morphed images)",
+      "Section 67 (publishing obscene material, if applicable)"
+    ],
+    "ipc_sections": [
+      "Section 499/500 (defamation)",
+      "Section 354D (stalking/harassment, if applicable)"
+    ],
+    "bns_sections": [
+      "Section 356 BNS (defamation)"
+    ],
+    "explanation": "Creating and circulating morphed images intended to humiliate someone violates their privacy under Section 66E of the IT Act and amounts to defamation under BNS Section 356. If the morphed images are sexually suggestive or obscene, Section 67 (publishing obscene material electronically) is also attracted, carrying significantly higher penalties.",
+    "punishment": "Section 66E: up to 3 years imprisonment and/or fine up to Rs. 2 lakh. Section 67 (if obscene): up to 3 years and fine up to Rs. 5 lakh for first conviction; up to 5 years and fine up to Rs. 10 lakh for subsequent conviction."
   },
   {
-    "id": "attempt_to_murder",
-    "category": "Offences Against Human Body",
-    "subcategory": "Attempt to Murder",
-    "ipc_section": "IPC Section 307",
-    "bns_section": "BNS Section 109",
-    "title": "Attempt to Murder",
-    "text": "Whoever does any act with such intention or knowledge, and under such circumstances that, if death were caused, they would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. If hurt is caused to any person by such act, the offender may be punished with imprisonment for life.",
-    "punishment": "Up to 10 years, or life imprisonment if hurt is caused, plus fine",
-    "cognizable": true,
-    "bailable": false,
-    "triable_by": "Court of Session"
+    "id": 20,
+    "situation": "My colleague keeps sending me unsolicited romantic messages on LinkedIn even though I've told her clearly I'm not interested and to stop contacting me.",
+    "is_cybercrime": true,
+    "category": "Cyberbullying / Online Harassment / Stalking",
+    "it_act_sections": [
+      "Section 66A (struck down, not applicable)"
+    ],
+    "ipc_sections": [
+      "Section 354D (stalking)"
+    ],
+    "bns_sections": [
+      "Section 78 BNS (stalking)"
+    ],
+    "explanation": "Repeated, unwanted electronic contact of a personal/romantic nature after a clear refusal can constitute cyberstalking under BNS Section 78, which covers monitoring or contacting a person through the internet, email, or any other form of electronic communication despite a clear indication of disinterest.",
+    "punishment": "Up to 3 years imprisonment for first conviction, up to 5 years for subsequent conviction, along with fine, under BNS Section 78."
+  },
+  {
+    "id": 21,
+    "situation": "I left a one-star review on a restaurant's Google listing because the food was bad and the service was slow.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Posting a genuine, honest review based on personal experience is a lawful exercise of consumer expression and free speech, not harassment or defamation. As long as the review reflects the reviewer's actual opinion and isn't maliciously false, no offence is made out.",
+    "punishment": "Not applicable - no offence is made out, provided the review is truthful and not maliciously fabricated."
+  },
+  {
+    "id": 22,
+    "situation": "My brother and I argue over text messages sometimes about family matters, but it's just normal sibling disagreement.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Ordinary disagreements between family members conducted over text, without threats, intimidation, or harassment, do not meet the threshold for any cyber offence. Ordinary conflict is not criminalized.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 23,
+    "situation": "A photo studio I visited for a private photoshoot leaked my pictures online without my consent.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 66E (violation of privacy)",
+      "Section 67/67A (if images are sexually explicit)"
+    ],
+    "ipc_sections": [
+      "Section 354C (voyeurism, if images were taken without knowledge/consent)"
+    ],
+    "bns_sections": [
+      "Section 77 BNS (voyeurism, if applicable)"
+    ],
+    "explanation": "Publishing or transmitting images of a person's private parts or private moments without consent, capturing or circulating images in violation of a person's reasonable expectation of privacy, is squarely covered under Section 66E of the IT Act. If the images are sexually explicit, the much more severe Section 67A applies instead.",
+    "punishment": "Section 66E: up to 3 years imprisonment and/or fine up to Rs. 2 lakh. Section 67A (sexually explicit content): up to 5 years and fine up to Rs. 10 lakh for first conviction; up to 7 years and fine up to Rs. 10 lakh for subsequent conviction."
+  },
+  {
+    "id": 24,
+    "situation": "I discovered that a mobile app I used for a personal loan accessed and downloaded my entire phone contact list and is now sending threatening messages to my contacts over my unpaid dues.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 43 (unauthorized access to data)",
+      "Section 66 (computer related offences)",
+      "Section 72A (disclosure of information in breach of lawful contract)"
+    ],
+    "ipc_sections": [
+      "Section 506 (criminal intimidation, for threats to contacts)"
+    ],
+    "bns_sections": [
+      "Section 351 BNS (criminal intimidation)"
+    ],
+    "explanation": "Unauthorized harvesting of personal data (contact lists) beyond what is reasonably necessary, and subsequent misuse of that data to harass third parties, violates Section 43 and Section 72A of the IT Act, which penalizes disclosure of personal information obtained while providing services under a lawful contract, without consent and with intent to cause wrongful loss. This is a recognized pattern in predatory loan-app harassment cases in India.",
+    "punishment": "Section 72A: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Criminal intimidation under BNS 351: up to 2 years or fine or both."
+  },
+  {
+    "id": 25,
+    "situation": "My ex-boyfriend is threatening to share my private photos with my family and friends if I don't get back together with him.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 66E (violation of privacy)",
+      "Section 67/67A (if photos are sexually explicit)"
+    ],
+    "ipc_sections": [
+      "Section 503/506 (criminal intimidation)",
+      "Section 384 (extortion)"
+    ],
+    "bns_sections": [
+      "Section 351 BNS (criminal intimidation)",
+      "Section 308 BNS (extortion)"
+    ],
+    "explanation": "This is 'sextortion' - using the threat of releasing private/intimate images to coerce a person into compliance. This involves criminal intimidation and extortion under the BNS, combined with privacy violation under Section 66E of the IT Act, and Section 67A if the images are sexually explicit. This is treated as a serious offence by Indian cybercrime cells.",
+    "punishment": "Section 67A: up to 5 years imprisonment and fine up to Rs. 10 lakh for first conviction. Extortion under BNS 308: up to 7 years imprisonment along with fine."
+  },
+  {
+    "id": 26,
+    "situation": "An e-commerce website I shopped on suffered a data breach and my saved card details and address were leaked on the dark web.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 43A (compensation for failure to protect data)",
+      "Section 72A (disclosure of information in breach of contract)"
+    ],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Under Section 43A of the IT Act, a body corporate that is negligent in implementing reasonable security practices to protect sensitive personal data is liable to pay compensation to the affected persons. If an identifiable individual within the company also disclosed the data dishonestly, Section 72A would apply to them personally. With the Digital Personal Data Protection Act, 2023 also in force, regulatory penalties from the Data Protection Board may apply to the company as well.",
+    "punishment": "Section 43A: compensation as determined by adjudicating officer/courts, with no statutory cap on the amount. Section 72A: up to 3 years imprisonment and/or fine up to Rs. 5 lakh for the individual responsible."
+  },
+  {
+    "id": 27,
+    "situation": "My doctor shared my medical test results with a pharmaceutical sales representative without asking me, and now I keep getting promotional calls about specific medications.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 72A (disclosure of information in breach of lawful contract)"
+    ],
+    "ipc_sections": [
+      "Section 405 (criminal breach of trust, in some interpretations)"
+    ],
+    "bns_sections": [
+      "Section 316 BNS (criminal breach of trust)"
+    ],
+    "explanation": "Sharing sensitive personal medical information obtained in the course of a professional/contractual relationship, without the patient's consent and for an unrelated commercial purpose, falls under Section 72A of the IT Act, which specifically targets unauthorized disclosure of personal information by a person providing services under a lawful contract.",
+    "punishment": "Up to 3 years imprisonment and/or fine up to Rs. 5 lakh under Section 72A."
+  },
+  {
+    "id": 28,
+    "situation": "I shared my own travel photos on my public Instagram account and tagged the locations I visited.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "This is voluntary self-disclosure of one's own personal information on a public platform of one's own choosing. Since the person consented to and controlled the sharing of their own data, no privacy violation or cyber offence occurs.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 29,
+    "situation": "A man I matched with on a dating app sent me unsolicited explicit photos of himself without my consent.",
+    "is_cybercrime": true,
+    "category": "Obscene/Sexual Content & Child Safety",
+    "it_act_sections": [
+      "Section 67 (publishing/transmitting obscene material in electronic form)",
+      "Section 67A (sexually explicit material)"
+    ],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Transmitting sexually explicit material electronically to a person without their consent constitutes an offence under Section 67A of the IT Act, which deals with publishing or transmitting material containing sexually explicit acts in electronic form. The lack of consent and unsolicited nature is key to establishing the offence.",
+    "punishment": "Section 67A: up to 5 years imprisonment and fine up to Rs. 10 lakh for first conviction; up to 7 years and fine up to Rs. 10 lakh for subsequent conviction."
+  },
+  {
+    "id": 30,
+    "situation": "I came across a website that appears to host sexually explicit images and videos of children.",
+    "is_cybercrime": true,
+    "category": "Obscene/Sexual Content & Child Safety",
+    "it_act_sections": [
+      "Section 67B (publishing/transmitting material depicting children in sexually explicit acts)"
+    ],
+    "ipc_sections": [
+      "Section 67B applies alongside POCSO Act, 2012"
+    ],
+    "bns_sections": [
+      "Section 67B applies alongside POCSO Act, 2012"
+    ],
+    "explanation": "This describes Child Sexual Abuse Material (CSAM), which is among the most serious offences under Indian cyber law. Section 67B of the IT Act specifically criminalizes creating, browsing, downloading, advertising, promoting, exchanging, or distributing material depicting children in sexually explicit acts. This is prosecuted in conjunction with the Protection of Children from Sexual Offences (POCSO) Act, 2012, and should be reported immediately to the National Cybercrime Reporting Portal (cybercrime.gov.in) or the police.",
+    "punishment": "Section 67B: up to 5 years imprisonment and fine up to Rs. 10 lakh for first conviction; up to 7 years and fine up to Rs. 10 lakh for subsequent conviction. POCSO penalties may be significantly higher and run concurrently."
+  },
+  {
+    "id": 31,
+    "situation": "A YouTube channel posted a movie review video that included some non-explicit clips from the film for critique purposes.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Using short clips for the purpose of criticism, review, or commentary is generally protected as fair use/fair dealing under copyright law, and does not constitute obscenity or any cyber offence, provided the content itself is not obscene and does not infringe beyond the scope of fair dealing. This is a copyright/IP consideration rather than a cybercrime matter, unless the usage is excessive and constitutes piracy.",
+    "punishment": "Not applicable as a cybercrime - potential copyright fair-dealing matter only, not criminal in nature if usage is limited and transformative."
+  },
+  {
+    "id": 32,
+    "situation": "A former business partner posted false claims on LinkedIn that I embezzled company funds, which is completely untrue and has damaged my professional reputation.",
+    "is_cybercrime": true,
+    "category": "Defamation / Fake News / Impersonation",
+    "it_act_sections": [
+      "Section 66 (computer related offences, in relation to dissemination)"
+    ],
+    "ipc_sections": [
+      "Section 499/500 (defamation)"
+    ],
+    "bns_sections": [
+      "Section 356 BNS (defamation)"
+    ],
+    "explanation": "Publishing false and damaging statements about a person through an electronic medium with intent to harm their reputation constitutes defamation under BNS Section 356. Since the medium used is a computer resource (LinkedIn), the act may also be examined under the IT Act's general computer-related offence provisions if data manipulation or fake evidence is involved.",
+    "punishment": "BNS Section 356: simple imprisonment up to 2 years, or fine, or both, or community service; defamation is also actionable as a civil wrong for damages."
+  },
+  {
+    "id": 33,
+    "situation": "Someone is impersonating a well-known journalist on Twitter/X using a similar handle and profile photo, spreading false statements attributed to them.",
+    "is_cybercrime": true,
+    "category": "Defamation / Fake News / Impersonation",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 500 (defamation)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 356 BNS (defamation)"
+    ],
+    "explanation": "Creating a fake account that impersonates a real, identifiable individual to deceive others into believing the statements are genuinely theirs constitutes identity theft (Section 66C) and cheating by personation (Section 66D) under the IT Act. If false statements attributed to the real person damage their reputation, defamation under BNS Section 356 also applies.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. Defamation: up to 2 years imprisonment or fine or both."
+  },
+  {
+    "id": 34,
+    "situation": "A WhatsApp forward falsely claimed that a particular vaccine causes infertility, and it has been circulating widely in my community group, causing panic.",
+    "is_cybercrime": true,
+    "category": "Defamation / Fake News / Impersonation",
+    "it_act_sections": [
+      "Section 66D (if used to deceive for fraudulent gain) - typically not applicable for pure misinformation",
+      "IT Rules 2021 (intermediary obligations re: misinformation)"
+    ],
+    "ipc_sections": [
+      "Section 505 (statements conducing to public mischief)"
+    ],
+    "bns_sections": [
+      "Section 353 BNS (statements conducing to public mischief)"
+    ],
+    "explanation": "Spreading false information that is likely to cause public fear, alarm, or incite panic falls under BNS Section 353 (public mischief), regardless of the medium used. While the IT Act itself doesn't have a dedicated 'fake news' provision (Section 66A having been struck down), large-scale circulation of medical misinformation can attract action under the Disaster Management Act (during declared emergencies) and the IT Rules 2021's grievance mechanisms for platforms.",
+    "punishment": "BNS Section 353: imprisonment up to 3 years, or fine, or both, depending on the specific clause and intent."
+  },
+  {
+    "id": 35,
+    "situation": "I wrote a strongly worded but factual blog post criticizing a politician's voting record on a particular bill, using publicly available parliamentary records.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Fair criticism of a public figure's conduct in their official capacity, when based on true and publicly verifiable facts, is protected speech under Article 19(1)(a) of the Constitution and does not amount to defamation, since truth is a complete defense to a defamation claim and matters of public interest enjoy wider latitude for criticism.",
+    "punishment": "Not applicable - no offence is made out, as truthful criticism of public conduct is constitutionally protected."
+  },
+  {
+    "id": 36,
+    "situation": "Someone used my Aadhaar and PAN details, which I never shared with them, to open a fraudulent loan account in my name.",
+    "is_cybercrime": true,
+    "category": "Identity Theft / Phishing / Spoofing",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)",
+      "Section 471 (using forged documents)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)",
+      "Section 340 BNS (using forged documents as genuine)"
+    ],
+    "explanation": "Fraudulent use of another person's unique identification documents (Aadhaar, PAN) to dishonestly obtain a financial benefit is a textbook case of identity theft under Section 66C, combined with cheating by personation under Section 66D. The use of forged or stolen identity documents also attracts forgery-related provisions under the BNS.",
+    "punishment": "Section 66C: up to 3 years imprisonment and fine up to Rs. 1 lakh. Section 66D: up to 3 years and fine up to Rs. 1 lakh. Forgery offences under BNS can attract up to 7 years depending on the specific document type."
+  },
+  {
+    "id": 37,
+    "situation": "I received a call where the caller ID showed my bank's official customer care number, but it turned out to be a scammer using caller ID spoofing technology.",
+    "is_cybercrime": true,
+    "category": "Identity Theft / Phishing / Spoofing",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)"
+    ],
+    "explanation": "Caller ID spoofing to impersonate a legitimate institution and deceive the victim is a clear case of cheating by personation through a computer resource under Section 66D of the IT Act. This is increasingly common in India and is also addressed through TRAI/DoT regulations on telecom spoofing alongside criminal prosecution.",
+    "punishment": "Up to 3 years imprisonment and fine up to Rs. 1 lakh under Section 66D."
+  },
+  {
+    "id": 38,
+    "situation": "My company uses my real name on our official 'About Us' webpage along with my professional bio and photo, which I provided and approved.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "This is the consensual, authorized use of one's own identity and information for a legitimate professional purpose, with the individual's knowledge and approval. There is no deception, impersonation, or unauthorized use involved.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 39,
+    "situation": "All the files on my company's systems got encrypted overnight, and a message appeared demanding Bitcoin payment to restore access.",
+    "is_cybercrime": true,
+    "category": "Malware / Ransomware / Virus",
+    "it_act_sections": [
+      "Section 43 (introduction of computer contaminant/virus)",
+      "Section 66 (computer related offences)",
+      "Section 66F (cyber terrorism, if scale/target qualifies as critical infrastructure)"
+    ],
+    "ipc_sections": [
+      "Section 384 (extortion)",
+      "Section 425/426 (mischief)"
+    ],
+    "bns_sections": [
+      "Section 308 BNS (extortion)",
+      "Section 324 BNS (mischief)"
+    ],
+    "explanation": "This describes a ransomware attack, which involves introducing a computer contaminant (malicious encryption software) under Section 43(c), causing damage to a computer system under Section 66, and extorting payment under threat, which constitutes extortion under BNS Section 308. If the attack targets critical infrastructure (banking, healthcare, government systems) with intent to threaten the unity, integrity, or security of India, it could escalate to cyber terrorism under Section 66F, which is far more severe.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Extortion under BNS 308: up to 7 years imprisonment. Section 66F (cyber terrorism): imprisonment for life, if applicable."
+  },
+  {
+    "id": 40,
+    "situation": "I downloaded a cracked version of a paid software from a torrent site and it ended up infecting my personal laptop with a virus that deleted my files.",
+    "is_cybercrime": true,
+    "category": "Malware / Ransomware / Virus",
+    "it_act_sections": [
+      "Section 43 (introduction of computer contaminant, though self-inflicted in this case complicates victim/perpetrator analysis)"
+    ],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "While the user is technically the victim of the malware (their own files were damaged), it's worth noting that downloading pirated/cracked software itself is a separate copyright infringement issue under the Copyright Act, 1957. As the victim of the virus infection, the user could report this to a cybercrime cell, though attributing the attack to a specific perpetrator (the torrent uploader) for prosecution purposes can be difficult.",
+    "punishment": "If a specific perpetrator who knowingly distributed the contaminant is identified: up to 3 years imprisonment and/or fine up to Rs. 5 lakh under Section 66. The user's own act of downloading pirated software may separately attract civil liability under the Copyright Act."
+  },
+  {
+    "id": 41,
+    "situation": "I run antivirus software on my computer regularly as a precaution, and it occasionally flags and removes minor threats.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Running antivirus software for legitimate protection of one's own device is a standard cybersecurity practice, not a cyber offence. This is a defensive, lawful action.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 42,
+    "situation": "I ordered a smartphone from a website that looked legitimate, paid online, but received an empty box, and now the website is no longer reachable.",
+    "is_cybercrime": true,
+    "category": "E-commerce / Online Shopping Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This describes a fraudulent e-commerce scheme where a fake or shell website was set up to dishonestly induce payment without delivering genuine goods, which is cheating committed via a computer resource under Section 66D of the IT Act, combined with cheating provisions under BNS Section 318.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318 (cheating): up to 7 years depending on the specific clause invoked, especially if it involves knowledge that delivery was never intended."
+  },
+  {
+    "id": 43,
+    "situation": "I bought a laptop online and it arrived two days later than the promised delivery date due to a courier delay.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "A delayed delivery due to logistical issues, without any intent to deceive or defraud, is a service deficiency matter governed by consumer protection law (Consumer Protection Act, 2019), not a criminal cyber offence. The remedy here lies with consumer forums, not cybercrime law.",
+    "punishment": "Not applicable as a cybercrime - this is a consumer protection/civil matter, remediable through consumer courts or the platform's grievance redressal."
+  },
+  {
+    "id": 44,
+    "situation": "An online seller refused to issue a refund for a defective product, citing their 'no refund' policy, which I find unfair but was clearly stated at checkout.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "A dispute over a seller's stated refund policy, when the policy was disclosed in advance, is a consumer rights/contractual matter rather than a criminal offence, unless the product was deliberately misrepresented to defraud the buyer. This falls under the Consumer Protection Act, 2019, including its E-Commerce Rules.",
+    "punishment": "Not applicable as a cybercrime - civil/consumer protection matter."
+  },
+  {
+    "id": 45,
+    "situation": "A hacking group claimed responsibility for breaching India's power grid control systems and threatened to cause blackouts unless their political demands are met.",
+    "is_cybercrime": true,
+    "category": "Cyber Terrorism / Critical Infrastructure",
+    "it_act_sections": [
+      "Section 66F (cyber terrorism)"
+    ],
+    "ipc_sections": [
+      "Read with Unlawful Activities (Prevention) Act, 1967, as applicable"
+    ],
+    "bns_sections": [
+      "Read with Unlawful Activities (Prevention) Act, 1967, as applicable"
+    ],
+    "explanation": "This is among the gravest offences under Indian cyber law. Section 66F criminalizes acts that deny or disrupt access to critical information infrastructure, or attempt to penetrate/access a computer resource without authorization, with intent to threaten the unity, integrity, security, or sovereignty of India, or to strike terror in people. Attacking power grid control systems for coercive political demands fits this provision precisely and would likely also invoke the Unlawful Activities (Prevention) Act, 1967.",
+    "punishment": "Section 66F: imprisonment for life."
+  },
+  {
+    "id": 46,
+    "situation": "An employee downloaded our company's entire client database and source code onto a personal USB drive before resigning and joining a competitor.",
+    "is_cybercrime": true,
+    "category": "Workplace / IP / Trade Secrets",
+    "it_act_sections": [
+      "Section 43 (unauthorized copying/extraction of data)",
+      "Section 66 (computer related offences)",
+      "Section 72 (breach of confidentiality, if intermediary obligations apply)"
+    ],
+    "ipc_sections": [
+      "Section 408 (criminal breach of trust by employee)",
+      "Section 379 (theft)"
+    ],
+    "bns_sections": [
+      "Section 316(3) BNS (criminal breach of trust by employee)",
+      "Section 303 BNS (theft)"
+    ],
+    "explanation": "Unauthorized extraction and removal of confidential business data (client databases, proprietary source code) by an employee, especially for use at a competing organization, constitutes both theft of data under IT Act Sections 43/66 and criminal breach of trust by an employee under BNS Section 316(3), which carries enhanced punishment due to the position of trust.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Criminal breach of trust by employee under BNS 316(3): up to 10 years imprisonment and fine, reflecting the breach of a position of trust."
+  },
+  {
+    "id": 47,
+    "situation": "I left my previous job and took my own personal notes and learnings (not company-owned data) with me to use as general knowledge in my new role.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "An individual's own general knowledge, skills, and personal learning acquired during employment are not the property of the employer and can be lawfully carried forward, as long as no confidential company data, trade secrets, or proprietary materials are involved. This is a settled principle distinguishing general skill from confidential information.",
+    "punishment": "Not applicable - no offence is made out, since no proprietary company data was taken."
+  },
+  {
+    "id": 48,
+    "situation": "I received a message on Instagram from an account claiming to be a modeling agency, offering me a contract, but then asking me to pay a 'registration fee' upfront via UPI.",
+    "is_cybercrime": true,
+    "category": "Social Engineering / Misc",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a common advance-fee scam where a fake opportunity is dangled to dishonestly induce upfront payment. If payment has been made, this constitutes completed cheating via a computer resource under Section 66D of the IT Act and BNS Section 318.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318: up to 7 years depending on severity and clause."
+  },
+  {
+    "id": 49,
+    "situation": "Someone on a job portal asked me to pay a 'security deposit' before I could be considered for a work-from-home data entry job, and after I paid, they stopped responding.",
+    "is_cybercrime": true,
+    "category": "Social Engineering / Misc",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a fake job scam, a recognized pattern of online fraud where fraudulent job postings are used to extract upfront payments under false pretenses via electronic platforms, attracting Section 66D of the IT Act for cheating by personation through a computer resource.",
+    "punishment": "Up to 3 years imprisonment and fine up to Rs. 1 lakh under Section 66D; BNS 318 cheating provisions may extend this further depending on amount and intent shown."
+  },
+  {
+    "id": 50,
+    "situation": "I applied for a genuine work-from-home job through a verified company's official careers page and went through a normal multi-round interview process.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Applying for and going through a legitimate hiring process with a verified employer through official channels is a normal, lawful activity with no element of deception or unauthorized access involved.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 51,
+    "situation": "I forgot my own email password and used the 'forgot password' option to reset it using my registered phone number.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Using the legitimate, intended account-recovery mechanism to regain access to one's own account is normal authorized use, not unauthorized access. There is no cyber offence here.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 52,
+    "situation": "My phone suddenly lost network signal, and within hours I discovered my bank account had been emptied; later I learned someone had fraudulently obtained a duplicate SIM card in my number.",
+    "is_cybercrime": true,
+    "category": "SIM Swap / Telecom Fraud",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a SIM swap fraud, where the fraudster impersonates the victim to the telecom provider to obtain a duplicate SIM, then uses OTP-based access to drain the victim's bank account. This involves identity theft (Section 66C) and cheating by personation through a computer/telecom resource (Section 66D), and is also reportable to the Department of Telecommunications.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. Cheating under BNS 318 can extend up to 7 years depending on amount involved."
+  },
+  {
+    "id": 53,
+    "situation": "I switched my mobile number from one telecom operator to another using the official MNP (mobile number portability) process, which took a couple of days as expected.",
+    "is_cybercrime": false,
+    "category": "SIM Swap / Telecom Fraud",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Mobile Number Portability is a legitimate, regulated process offered by telecom operators with the subscriber's own consent and verification (typically via UPC code sent to the user). This is routine and lawful telecom activity.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 54,
+    "situation": "Someone used AI tools to create a deepfake video of me saying things I never said and circulated it among my professional network, damaging my credibility.",
+    "is_cybercrime": true,
+    "category": "Deepfakes / AI-Generated Content Misuse",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)",
+      "Section 66E (violation of privacy)"
+    ],
+    "ipc_sections": [
+      "Section 500 (defamation)",
+      "Section 419 (cheating by personation)"
+    ],
+    "bns_sections": [
+      "Section 356 BNS (defamation)",
+      "Section 319 BNS (cheating by personation)"
+    ],
+    "explanation": "Creating and circulating a deepfake that falsely attributes statements to a real person is a form of personation and identity misuse under Section 66D, combined with privacy violation under Section 66E, and defamation under BNS Section 356 since it damages reputation through false attribution. India does not yet have a dedicated deepfake-specific statute, so prosecution currently relies on this combination of provisions; the IT Rules 2021 (as amended) also impose takedown obligations on platforms for synthetic/manipulated media.",
+    "punishment": "Section 66D/66E: up to 3 years imprisonment and fine up to Rs. 1-2 lakh. Defamation under BNS 356: up to 2 years imprisonment, or fine, or both."
+  },
+  {
+    "id": 55,
+    "situation": "A deepfake video using a female celebrity's face was superimposed onto explicit content and circulated widely on social media without her consent.",
+    "is_cybercrime": true,
+    "category": "Deepfakes / AI-Generated Content Misuse",
+    "it_act_sections": [
+      "Section 66E (violation of privacy)",
+      "Section 67A (sexually explicit material in electronic form)"
+    ],
+    "ipc_sections": [
+      "Section 354C (voyeurism, if applicable)"
+    ],
+    "bns_sections": [
+      "Section 77 BNS (voyeurism, if applicable)"
+    ],
+    "explanation": "Non-consensual sexually explicit deepfakes constitute a severe privacy violation under Section 66E and squarely fall under Section 67A of the IT Act for publishing/transmitting sexually explicit material electronically, since the underlying act causes the same harm to the depicted individual regardless of whether the imagery is real or synthetically generated.",
+    "punishment": "Section 67A: up to 5 years imprisonment and fine up to Rs. 10 lakh for first conviction; up to 7 years and fine up to Rs. 10 lakh for subsequent conviction."
+  },
+  {
+    "id": 56,
+    "situation": "I used an AI image generator to create a fictional, clearly-labeled satirical cartoon of a public policy debate for my blog, not depicting any real identifiable person.",
+    "is_cybercrime": false,
+    "category": "Deepfakes / AI-Generated Content Misuse",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Creating clearly fictional, non-defamatory satirical content that does not depict or impersonate any real identifiable individual is a lawful exercise of creative and political expression, protected under free speech principles.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 57,
+    "situation": "I deposited money into an online betting app that promised guaranteed winnings on cricket matches, but when I tried to withdraw my winnings, the app blocked my account and stopped responding.",
+    "is_cybercrime": true,
+    "category": "Online Gaming / Betting Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Fraudulent gaming/betting platforms that accept deposits but block withdrawals constitute cheating committed via a computer resource under Section 66D of the IT Act. Note that online betting itself may also raise issues under state-specific gambling laws, separate from the fraud committed by the platform.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318 (cheating): up to 7 years depending on severity."
+  },
+  {
+    "id": 58,
+    "situation": "My nephew spent money on in-game purchases (skins and upgrades) in a mobile game using my saved card without my knowledge, since the card was saved on my phone with the app.",
+    "is_cybercrime": true,
+    "category": "Online Gaming / Betting Fraud",
+    "it_act_sections": [
+      "Section 66C (if card/identity details were used without authorization) - civil/family context tempers criminal pursuit"
+    ],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Technically, using saved payment details without the cardholder's authorization could fall under unauthorized use of payment credentials. However, where the person making the unauthorized purchases is a minor family member without fraudulent intent (rather than an external attacker), this is typically resolved as a family/consumer matter through the app's refund policies and parental control settings rather than criminal prosecution, since the legal threshold for criminal intent (mens rea) is unlikely to be met.",
+    "punishment": "Generally resolved via the platform's refund/dispute process rather than criminal prosecution in family contexts; formal criminal liability would require deceptive intent, which is typically absent here."
+  },
+  {
+    "id": 59,
+    "situation": "I play a multiplayer online game with friends regularly and sometimes spend money on legitimate in-app purchases using my own card.",
+    "is_cybercrime": false,
+    "category": "Online Gaming / Betting Fraud",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Voluntary spending on legitimate in-game purchases using one's own payment method is a normal consumer transaction with no element of fraud, deception, or unauthorized access.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 60,
+    "situation": "I met someone on a matrimonial website, and after weeks of conversation, they claimed to be stuck abroad and needed money urgently for a medical emergency, after which they stopped responding once I sent the funds.",
+    "is_cybercrime": true,
+    "category": "Matrimonial / Romance Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a classic romance scam, where a fraudster builds trust over time through a matrimonial or dating platform before fabricating an emergency to extract money. The deception conducted via a computer resource (the platform/messaging) constitutes cheating by personation under Section 66D, alongside cheating under BNS Section 318.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318 (cheating): up to 7 years depending on the amount and clause invoked."
+  },
+  {
+    "id": 61,
+    "situation": "My family is using a matrimonial website to find a suitable match for me, and we've been verifying profiles before proceeding to meet anyone.",
+    "is_cybercrime": false,
+    "category": "Matrimonial / Romance Fraud",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Using a legitimate matrimonial platform with reasonable verification before proceeding is a normal, lawful, and prudent way to seek a match. No deception or fraud is involved.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 62,
+    "situation": "Someone posted my home address, phone number, and daily schedule on a public forum after I criticized them online, encouraging others to 'visit' me.",
+    "is_cybercrime": true,
+    "category": "Doxxing / Personal Info Exposure",
+    "it_act_sections": [
+      "Section 66E (violation of privacy)",
+      "Section 43 (if data was obtained through unauthorized access)"
+    ],
+    "ipc_sections": [
+      "Section 503/506 (criminal intimidation)",
+      "Section 354D (stalking, if pattern continues)"
+    ],
+    "bns_sections": [
+      "Section 351 BNS (criminal intimidation)",
+      "Section 78 BNS (stalking, if pattern continues)"
+    ],
+    "explanation": "This is doxxing - publishing someone's private identifying information online with intent to enable harassment or harm. This violates Section 66E (privacy violation) and, given the implicit threat of having strangers 'visit,' constitutes criminal intimidation under BNS Section 351. If the conduct is part of an ongoing pattern, cyberstalking provisions may also apply.",
+    "punishment": "Section 66E: up to 3 years imprisonment and/or fine up to Rs. 2 lakh. Criminal intimidation under BNS 351: up to 2 years or fine or both (up to 7 years for threats of death/grievous hurt)."
+  },
+  {
+    "id": 63,
+    "situation": "A journalist published a news article naming a public official and their officially listed work address and office phone number in connection with a government policy story.",
+    "is_cybercrime": false,
+    "category": "Doxxing / Personal Info Exposure",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Publishing publicly available, official contact information of a public official in their professional capacity, in connection with legitimate journalism on a matter of public interest, is standard journalistic practice and not a privacy violation, since this is information the official has provided for public/professional accessibility.",
+    "punishment": "Not applicable - no offence is made out, as this involves public-facing professional information used for legitimate journalism."
+  },
+  {
+    "id": 64,
+    "situation": "A rival company hired a hacker to break into our internal servers and steal our unreleased product designs before our official launch.",
+    "is_cybercrime": true,
+    "category": "Corporate Espionage / Trade Secrets",
+    "it_act_sections": [
+      "Section 43 (unauthorized access and data theft)",
+      "Section 66 (computer related offences)",
+      "Section 72 (breach of confidentiality, where applicable)"
+    ],
+    "ipc_sections": [
+      "Section 379 (theft)",
+      "Section 420 (cheating, if used to gain unfair business advantage)"
+    ],
+    "bns_sections": [
+      "Section 303 BNS (theft)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Corporate espionage involving unauthorized intrusion into a competitor's systems to steal trade secrets or proprietary designs is a serious offence under Section 66 of the IT Act (computer related offences flowing from Section 43's prohibition on unauthorized access). The company that commissioned the hack can also be held liable for abetment.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh for the hacker; abetment carries similar liability for those who commissioned the act under general criminal law principles."
+  },
+  {
+    "id": 65,
+    "situation": "Our marketing team studied a competitor's publicly available pricing page and social media posts to benchmark our own product pricing strategy.",
+    "is_cybercrime": false,
+    "category": "Corporate Espionage / Trade Secrets",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Competitive analysis using publicly available information is standard, lawful business practice and a normal part of market research. No unauthorized access or data theft is involved.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 66,
+    "situation": "Someone hacked into the university's exam portal and changed their grades from failing to passing across multiple subjects.",
+    "is_cybercrime": true,
+    "category": "Academic / Examination Fraud",
+    "it_act_sections": [
+      "Section 43 (unauthorized access and alteration of data)",
+      "Section 66 (computer related offences)"
+    ],
+    "ipc_sections": [
+      "Section 463/465 (forgery)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 336 BNS (forgery)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Unauthorized access to an academic records system to fraudulently alter grade data is a clear violation of Section 43 (unauthorized access and data alteration), criminally punishable under Section 66, combined with forgery of academic records under the BNS, since the falsified records are intended to be used as genuine.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Forgery under BNS 336 can attract up to 7 years depending on the nature of the document forged."
+  },
+  {
+    "id": 67,
+    "situation": "I checked my exam results on the university's official student portal using my own login credentials after results were declared.",
+    "is_cybercrime": false,
+    "category": "Academic / Examination Fraud",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Logging into one's own account through official, authorized means to check one's own results is normal, authorized use of a system.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 68,
+    "situation": "An employee who had legitimate access to company financial records as part of their job discovered evidence of fraud and shared the relevant documents with a government regulator.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Disclosure of evidence of wrongdoing to appropriate regulatory or law enforcement authorities by someone who had legitimate access to the information, made in good faith and in the public interest, is generally protected whistleblowing activity rather than a cyber offence. India's Whistle Blowers Protection Act, 2014 and various sectoral regulations provide some protections in such cases, though the scope of protection can vary by context and employer type.",
+    "punishment": "Not applicable as a cybercrime - this is a whistleblowing/regulatory disclosure matter, though specific facts should be reviewed against applicable confidentiality agreements and protection statutes."
+  },
+  {
+    "id": 69,
+    "situation": "A disgruntled employee downloaded confidential customer data they were not authorized to access and leaked it to a journalist to embarrass the company, unrelated to any wrongdoing by the company.",
+    "is_cybercrime": true,
+    "category": "Workplace / IP / Trade Secrets",
+    "it_act_sections": [
+      "Section 43 (unauthorized access/extraction of data)",
+      "Section 66 (computer related offences)",
+      "Section 72 (breach of confidentiality)"
+    ],
+    "ipc_sections": [
+      "Section 405/408 (criminal breach of trust)"
+    ],
+    "bns_sections": [
+      "Section 316 BNS (criminal breach of trust)"
+    ],
+    "explanation": "Unlike genuine whistleblowing about wrongdoing, accessing data beyond one's authorization and leaking it for personal grievance rather than to expose illegality is unauthorized access and a breach of trust under Sections 43 and 66 of the IT Act, combined with criminal breach of trust under the BNS, since there is no protected public-interest disclosure involved.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Criminal breach of trust under BNS 316: up to 5-10 years depending on the specific clause."
+  },
+  {
+    "id": 70,
+    "situation": "My 14-year-old child was added to an online group chat by classmates where older, unknown adults were also present, and one adult began asking my child for personal photos.",
+    "is_cybercrime": true,
+    "category": "Obscene/Sexual Content & Child Safety",
+    "it_act_sections": [
+      "Section 67B (if sexual content/solicitation of children is involved)",
+      "Section 66C/66D (if impersonation involved)"
+    ],
+    "ipc_sections": [
+      "Read with POCSO Act, 2012"
+    ],
+    "bns_sections": [
+      "Read with POCSO Act, 2012"
+    ],
+    "explanation": "An adult soliciting personal photos from a minor online, especially in the context of online grooming, raises serious child safety concerns. Depending on the nature of the photos requested and any subsequent acts, this can fall under Section 67B of the IT Act, and the POCSO Act, 2012, which specifically criminalizes online sexual solicitation and grooming of children (Section 11/12 read with related provisions). This should be reported immediately to the Cyber Crime helpline (1930) or cybercrime.gov.in, and to local police/child protection authorities.",
+    "punishment": "Section 67B: up to 5-7 years imprisonment and fine up to Rs. 10 lakh. POCSO penalties for grooming/solicitation can be additionally severe and run concurrently."
+  },
+  {
+    "id": 71,
+    "situation": "My child uses an educational app at school that requires a teacher-supervised login and only accesses age-appropriate, curriculum-approved content.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Use of a supervised, age-appropriate educational platform within an institutional setting with appropriate safeguards is normal and beneficial use of technology, posing no cyber safety concern.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 72,
+    "situation": "Someone gained access to my cryptocurrency wallet through a fake wallet-recovery website and transferred all my Bitcoin holdings to an unknown address.",
+    "is_cybercrime": true,
+    "category": "Cryptocurrency / Digital Asset Crimes",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)",
+      "Section 66C (identity theft, re: wallet credentials)",
+      "Section 66D (cheating by personation)"
+    ],
+    "ipc_sections": [
+      "Section 379 (theft)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 303 BNS (theft)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Using a fraudulent phishing website to obtain wallet recovery phrases/private keys and then transferring cryptocurrency without authorization is a combination of unauthorized access (Section 43/66), identity theft of wallet credentials (Section 66C), and cheating by personation (Section 66D). Cryptocurrency, while not legal tender in India, is treated as property for the purposes of theft and fraud prosecution.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Section 66C/66D: up to 3 years and fine up to Rs. 1 lakh each."
+  },
+  {
+    "id": 73,
+    "situation": "I bought Bitcoin through a registered, RBI-compliant Indian cryptocurrency exchange using my own bank account and properly completed KYC.",
+    "is_cybercrime": false,
+    "category": "Cryptocurrency / Digital Asset Crimes",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Purchasing cryptocurrency through a legitimate, KYC-compliant exchange following applicable regulatory requirements is a lawful financial transaction.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 74,
+    "situation": "A company is selling cracked/pirated versions of expensive enterprise software licenses through a website, bypassing the original vendor's licensing checks.",
+    "is_cybercrime": true,
+    "category": "Software Piracy / IP Infringement",
+    "it_act_sections": [
+      "Section 65 (tampering with computer source documents, if source code/licensing mechanism was altered)",
+      "Section 66 (computer related offences)"
+    ],
+    "ipc_sections": [
+      "Read with Copyright Act, 1957 (Sections 63-65)"
+    ],
+    "bns_sections": [
+      "Read with Copyright Act, 1957 (Sections 63-65)"
+    ],
+    "explanation": "Distributing cracked software that circumvents licensing/DRM mechanisms involves tampering with computer source code under Section 65 of the IT Act (if the source documents were altered) and is primarily prosecuted under the Copyright Act, 1957, which criminalizes circumvention of technological protection measures and infringement of copyright in software.",
+    "punishment": "Section 65 IT Act: up to 3 years imprisonment and/or fine up to Rs. 2 lakh. Copyright Act offences: up to 3 years imprisonment and fine up to Rs. 2 lakh, which can run concurrently."
+  },
+  {
+    "id": 75,
+    "situation": "I use a free, open-source software tool under its published license terms for a personal coding project.",
+    "is_cybercrime": false,
+    "category": "Software Piracy / IP Infringement",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Using open-source software in accordance with its published license terms is fully lawful and is precisely the intended use case for such licenses.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 76,
+    "situation": "I received an email claiming to be from the Income Tax Department saying I have a pending refund and asking me to click a link and enter my bank details to claim it.",
+    "is_cybercrime": true,
+    "category": "Government Impersonation / Fake Official Communication",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation of a government entity using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a phishing scam impersonating a government department to extract sensitive financial information. Falsely posing as a government authority through electronic communication to deceive a person constitutes cheating by personation under Section 66D of the IT Act, an aggravated form of the offence given the impersonation of a state authority.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. Impersonating a government servant can additionally attract penalties under general criminal law provisions for impersonation of public servants."
+  },
+  {
+    "id": 77,
+    "situation": "I received a genuine SMS from my state government's official short code confirming my passport application status update.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Receiving legitimate official communication from a verified government short code regarding one's own application is normal, authentic government service delivery.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 78,
+    "situation": "My former partner shared intimate photos and videos of us, taken consensually during our relationship, on a public website after we broke up, without my consent.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 66E (violation of privacy)",
+      "Section 67A (publishing/transmitting sexually explicit material electronically)"
+    ],
+    "ipc_sections": [
+      "Section 354C (voyeurism, in some interpretations)"
+    ],
+    "bns_sections": [
+      "Section 77 BNS (voyeurism, in some interpretations)"
+    ],
+    "explanation": "This is non-consensual intimate imagery ('revenge porn'). Even though the images were originally taken consensually, publishing or transmitting them without the subject's consent after the relationship ended is a serious violation of privacy under Section 66E and squarely falls under Section 67A of the IT Act for transmitting sexually explicit material electronically without consent. Courts and cybercrime cells in India treat this as a high-priority offence, and victims can seek urgent takedown under the IT Rules 2021 in addition to criminal prosecution.",
+    "punishment": "Section 67A: up to 5 years imprisonment and fine up to Rs. 10 lakh for first conviction; up to 7 years and fine up to Rs. 10 lakh for subsequent conviction. Section 66E: up to 3 years and/or fine up to Rs. 2 lakh."
+  },
+  {
+    "id": 79,
+    "situation": "Two business partners are in a dispute over who owns a jointly registered company domain name and social media accounts, and one has refused to hand over login access.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Disputes over ownership of jointly-created digital business assets between partners, where both had legitimate original access, are primarily civil/contractual and partnership law matters, not criminal cyber offences, unless one party obtains access through deception or hacks an account they were never authorized to access in the first place. This is typically resolved through partnership dissolution agreements or civil suits.",
+    "punishment": "Not applicable as a cybercrime in the absence of unauthorized access or deception - this is a civil/partnership dispute, resolvable through negotiation, mediation, or civil courts."
+  },
+  {
+    "id": 80,
+    "situation": "A subscription service automatically renewed and charged my card because I forgot to cancel before the trial period ended, even though the terms clearly disclosed this at signup.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Auto-renewal charges that were clearly disclosed in the terms at the time of signup, even if the consumer forgot to cancel, do not constitute fraud, since there was no deception about the billing terms. This is a consumer awareness matter, though under Indian consumer protection rules companies are required to send renewal reminders; if such reminders were not sent as legally mandated, it could become a consumer protection complaint rather than a cybercrime.",
+    "punishment": "Not applicable as a cybercrime - consumer protection matter, addressable through the Consumer Protection Act, 2019, or the service's own cancellation/refund process."
+  },
+  {
+    "id": 81,
+    "situation": "I'm a security researcher who found a vulnerability in a company's public website and reported it responsibly to them through their official bug bounty program without exploiting it further.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Responsible disclosure of security vulnerabilities through an authorized bug bounty or responsible disclosure program, without unauthorized exploitation, data theft, or damage, is a recognized and legally protected cybersecurity practice. Most organizations explicitly authorize this kind of testing within defined scope, which negates the 'unauthorized access' element required for liability under Section 43/66.",
+    "punishment": "Not applicable - no offence is made out when conducted within the authorized scope of a responsible disclosure or bug bounty program."
+  },
+  {
+    "id": 82,
+    "situation": "A security researcher found a vulnerability in a bank's mobile app and, instead of reporting it, used it to access other customers' account information to prove a point on social media.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)",
+      "Section 72 (breach of confidentiality and privacy)"
+    ],
+    "ipc_sections": [
+      "Section 379 (theft, of data)"
+    ],
+    "bns_sections": [
+      "Section 303 BNS (theft, of data)"
+    ],
+    "explanation": "Even when initially motivated by security research, actually exploiting a vulnerability to access other customers' confidential account data without authorization, rather than responsibly disclosing it, crosses into unauthorized access and a breach of confidentiality, both punishable under Sections 43, 66, and 72 of the IT Act. Good intent does not exempt unauthorized access to others' private data.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Section 72: up to 2 years imprisonment and/or fine up to Rs. 1 lakh."
+  },
+  {
+    "id": 83,
+    "situation": "My employer monitors company-issued laptops and email accounts for security and compliance purposes, as disclosed in our employment contract and IT policy.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Employer monitoring of company-owned devices and accounts, when clearly disclosed in advance through employment contracts or IT policies, is a standard and lawful corporate governance practice, not a privacy violation, since the employee has been informed and the monitoring relates to company property and resources.",
+    "punishment": "Not applicable - no offence is made out, as monitoring was disclosed and relates to company-owned resources."
+  },
+  {
+    "id": 84,
+    "situation": "Someone created a parody account clearly labeled as 'parody/fan account, not affiliated' that humorously mimics a celebrity's public persona and posts obviously satirical content.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Clearly labeled parody or fan accounts that do not attempt to deceive followers into believing they are the genuine, official account are generally protected as satire and free expression, since they lack the deceptive intent that distinguishes parody from impersonation under Sections 66C/66D.",
+    "punishment": "Not applicable - no offence is made out when the account is clearly and genuinely labeled as parody/fan content without deceptive intent."
+  },
+  {
+    "id": 85,
+    "situation": "A scammer created a fake account pretending to be a celebrity (without any parody disclosure) and used it to solicit money from fans for a 'fan meet-and-greet contest' that never existed.",
+    "is_cybercrime": true,
+    "category": "Defamation / Fake News / Impersonation",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Unlike disclosed parody, this involves deliberately impersonating a real individual without disclosure, specifically to deceive victims into parting with money, which is a clear case of identity theft (Section 66C) combined with cheating by personation through a computer resource (Section 66D).",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. BNS cheating provisions can extend this further depending on the amount defrauded."
+  },
+  {
+    "id": 86,
+    "situation": "I sent a strongly worded but non-threatening email to a company's customer service complaining about poor service and demanding a refund.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Expressing dissatisfaction and demanding a legitimate remedy through a company's official customer service channel, without threats or abuse, is a normal exercise of consumer rights.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 87,
+    "situation": "An anonymous account has been sending me messages threatening to harm me and my family if I don't pay them a sum of money in cryptocurrency, claiming to have compromising information about me.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 66E (if privacy/images involved)",
+      "Section 66D (if personation involved)"
+    ],
+    "ipc_sections": [
+      "Section 384 (extortion)",
+      "Section 503/506 (criminal intimidation)"
+    ],
+    "bns_sections": [
+      "Section 308 BNS (extortion)",
+      "Section 351 BNS (criminal intimidation)"
+    ],
+    "explanation": "This is cyber extortion - using threats made through electronic communication to coerce payment. This is criminal intimidation and extortion under BNS Sections 351 and 308, and if the 'compromising information' includes private images, Section 66E of the IT Act also applies for the underlying privacy violation.",
+    "punishment": "Extortion under BNS 308: up to 7 years imprisonment along with fine. Criminal intimidation under BNS 351: up to 2 years or fine or both (up to 7 years if death/grievous hurt is threatened)."
+  },
+  {
+    "id": 88,
+    "situation": "I run a small online business and use Google Analytics to track anonymized visitor traffic and behavior patterns on my own website.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Using standard, industry-common analytics tools to track aggregated and/or anonymized visitor behavior on one's own legitimately owned website is normal business practice, especially when done in compliance with applicable privacy disclosures (e.g., cookie consent banners).",
+    "punishment": "Not applicable - no offence is made out, provided appropriate privacy disclosures/consent mechanisms are in place as required by applicable law."
+  },
+  {
+    "id": 89,
+    "situation": "Someone hijacked my YouTube channel by tricking me into clicking a fake brand-collaboration link that stole my login session, and they are now live-streaming a cryptocurrency scam using my channel's subscriber base.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)",
+      "Section 66D (cheating by personation, re: scam content)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating, for the downstream scam)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating, for the downstream scam)"
+    ],
+    "explanation": "This combines account hijacking via a phishing link (unauthorized access under Sections 43/66) with the subsequent use of the compromised channel to run a cheating scheme that defrauds viewers (Section 66D and BNS 318). This is a well-documented attack pattern targeting content creators.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Section 66D: up to 3 years and fine up to Rs. 1 lakh. Downstream cheating victims can pursue separate complaints under BNS 318."
+  },
+  {
+    "id": 90,
+    "situation": "My landlord installed a hidden camera in the bathroom of the rental property I'm living in, and I discovered it was streaming footage to an app on his phone.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 66E (violation of privacy, capturing/transmitting images of private area without consent)"
+    ],
+    "ipc_sections": [
+      "Section 354C (voyeurism)"
+    ],
+    "bns_sections": [
+      "Section 77 BNS (voyeurism)"
+    ],
+    "explanation": "Covertly capturing and transmitting images of a person in a private space where they have a reasonable expectation of privacy (such as a bathroom), without their consent, is a serious privacy violation under Section 66E of the IT Act and constitutes voyeurism under BNS Section 77.",
+    "punishment": "Section 66E: up to 3 years imprisonment and/or fine up to Rs. 2 lakh. Voyeurism under BNS 77: up to 3 years for first conviction (up to 7 years for subsequent conviction), along with fine."
+  },
+  {
+    "id": 91,
+    "situation": "A retail store has visible CCTV cameras in the customer area for security purposes, clearly displayed with signage indicating recording is in progress.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Visible, disclosed CCTV surveillance in common/public commercial areas for legitimate security purposes is standard, lawful practice and does not violate any reasonable expectation of privacy, especially when disclosed via signage.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 92,
+    "situation": "I received a WhatsApp message from an unknown number offering me a part-time job of 'liking YouTube videos' for daily payment, and after completing a few small tasks and getting paid, they asked me to join a 'VIP group' requiring an upfront investment.",
+    "is_cybercrime": true,
+    "category": "Social Engineering / Misc",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a well-known 'task-based investment scam' pattern, where small initial payments build trust before victims are persuaded to make larger 'investments' that are never returned. The entire scheme operated through electronic messaging to defraud constitutes cheating via computer resource under Section 66D of the IT Act.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318 cheating provisions can extend punishment up to 7 years depending on amount and scale."
+  },
+  {
+    "id": 93,
+    "situation": "I use two-factor authentication and a password manager to secure my online accounts, and I recently updated all my passwords as a precaution after a major data breach was reported in the news.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Taking proactive cybersecurity precautions to protect one's own accounts is responsible, lawful digital hygiene, not a cyber offence.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 94,
+    "situation": "A disgruntled customer posted hundreds of fake negative reviews using multiple fake accounts to deliberately tank a small business's rating after a personal dispute with the owner unrelated to the product or service quality.",
+    "is_cybercrime": true,
+    "category": "Defamation / Fake News / Impersonation",
+    "it_act_sections": [
+      "Section 66C (identity theft, if fake accounts impersonate real people)",
+      "Section 66D (if fake personas are used to deceive)"
+    ],
+    "ipc_sections": [
+      "Section 499/500 (defamation)"
+    ],
+    "bns_sections": [
+      "Section 356 BNS (defamation)"
+    ],
+    "explanation": "Posting numerous fake reviews through multiple fabricated accounts, motivated by personal malice rather than genuine experience, to defame and harm a business constitutes defamation under BNS Section 356. If the fake accounts impersonate real third parties without consent, identity theft under Section 66C also applies.",
+    "punishment": "Defamation under BNS 356: up to 2 years imprisonment, or fine, or both, or community service. Section 66C (if applicable): up to 3 years imprisonment and fine up to Rs. 1 lakh."
+  },
+  {
+    "id": 95,
+    "situation": "I'm comparing two products on my YouTube tech review channel and pointing out genuine flaws I personally found during testing of both.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Honest, fact-based product reviews and comparisons based on genuine personal testing are legitimate consumer journalism/commentary and are protected as fair comment, provided the criticism is truthful and not maliciously fabricated.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 96,
+    "situation": "An online tutoring platform I used shared my child's learning progress data with a third-party advertising company without proper parental consent, as later revealed through a privacy investigation.",
+    "is_cybercrime": true,
+    "category": "Data Theft / Privacy Violation",
+    "it_act_sections": [
+      "Section 43A (failure to protect sensitive personal data)",
+      "Section 72A (disclosure of information in breach of lawful contract)"
+    ],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Sharing a child's personal data with third parties without proper parental consent is a serious violation under Section 43A (failure to implement reasonable security/privacy practices) and Section 72A of the IT Act (unauthorized disclosure of personal information obtained under a service contract). This would also likely violate the Digital Personal Data Protection Act, 2023, which has heightened consent requirements for processing children's data.",
+    "punishment": "Section 43A: compensation as determined by adjudicating authority, uncapped. Section 72A: up to 3 years imprisonment and/or fine up to Rs. 5 lakh for the responsible individual. DPDP Act penalties on the company can run into crores of rupees."
+  },
+  {
+    "id": 97,
+    "situation": "A telemarketer called me to offer a credit card, and I declined and asked to be removed from their calling list, which they complied with.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "A standard, compliant telemarketing call that respects an opt-out request is a normal commercial practice, particularly when handled in line with TRAI's regulations on commercial communications.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 98,
+    "situation": "A developer at our company secretly modified the source code of our flagship product to insert a hidden backdoor before quitting, allowing him remote access even after leaving.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 65 (tampering with computer source documents)",
+      "Section 66 (computer related offences)",
+      "Section 43 (unauthorized access via the backdoor)"
+    ],
+    "ipc_sections": [
+      "Section 408 (criminal breach of trust by employee)"
+    ],
+    "bns_sections": [
+      "Section 316(3) BNS (criminal breach of trust by employee)"
+    ],
+    "explanation": "Knowingly or intentionally concealing, destroying, or altering computer source code when it is required to be kept or maintained, with the intent to cause damage, is specifically criminalized under Section 65 of the IT Act. Embedding a hidden backdoor for unauthorized future access compounds this with Sections 43 and 66, plus criminal breach of trust by an employee under the BNS given the position of trust.",
+    "punishment": "Section 65: up to 3 years imprisonment and/or fine up to Rs. 2 lakh. Section 66: up to 3 years and/or fine up to Rs. 5 lakh. Criminal breach of trust by employee under BNS 316(3): up to 10 years imprisonment."
+  },
+  {
+    "id": 99,
+    "situation": "Our development team uses version control (Git) to track and review all changes to our codebase, with mandatory code review before any change is merged.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Standard, authorized software development practices like version control and peer code review represent normal, lawful engineering workflow with full transparency and accountability for changes made.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 100,
+    "situation": "A competitor allegedly launched a coordinated DDoS (distributed denial of service) attack against our e-commerce website during our biggest sale event, causing it to crash for six hours and resulting in significant revenue loss.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (denial of access to authorized users)",
+      "Section 66 (computer related offences)",
+      "Section 66F (cyber terrorism, only if critical infrastructure/national security angle exists - not typical for commercial DDoS)"
+    ],
+    "ipc_sections": [
+      "Section 425/426 (mischief)"
+    ],
+    "bns_sections": [
+      "Section 324 BNS (mischief)"
+    ],
+    "explanation": "A Distributed Denial of Service attack that deliberately disrupts access to a computer resource for authorized users is explicitly covered under Section 43(f) of the IT Act (denying access to an authorized person), criminally punishable under Section 66, combined with mischief provisions under the BNS for the resulting financial damage.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Mischief causing damage under BNS 324 can attract penalties scaled to the value of loss caused."
+  },
+  {
+    "id": 101,
+    "situation": "Our website experienced a temporary slowdown during a flash sale simply due to unexpectedly high genuine customer traffic, not any malicious attack.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "A service slowdown caused by legitimate high traffic volume, without any malicious intent or unauthorized interference, is purely an infrastructure/capacity issue, not a cyber offence.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 102,
+    "situation": "I downloaded a flashlight app from a third-party app store that, after installation, started sending premium-rate SMS messages from my phone without my knowledge, resulting in unexpected charges on my phone bill.",
+    "is_cybercrime": true,
+    "category": "Malware / Ransomware / Virus",
+    "it_act_sections": [
+      "Section 43 (unauthorized access/introduction of contaminant)",
+      "Section 66 (computer related offences)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "A malicious app that performs unauthorized actions (sending premium SMS) without the user's knowledge or consent constitutes introduction of a computer contaminant and unauthorized use of the device under Sections 43 and 66 of the IT Act, combined with cheating under Section 66D/BNS 318 since the user is fraudulently charged.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Section 66D: up to 3 years and fine up to Rs. 1 lakh."
+  },
+  {
+    "id": 103,
+    "situation": "I downloaded a well-reviewed fitness tracking app from the official Google Play Store and granted it permission to access my step count data, as disclosed in its privacy policy.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Downloading a legitimate app from an official app store and granting permissions that are clearly disclosed and relevant to the app's stated function is normal, informed, consensual use of technology.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 104,
+    "situation": "I received a panicked phone call that sounded exactly like my son's voice saying he'd been in an accident and needed money sent immediately, but it turned out to be an AI-generated voice clone scam.",
+    "is_cybercrime": true,
+    "category": "Identity Theft / Phishing / Spoofing",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is an AI voice-cloning scam, an increasingly common fraud where attackers use a brief audio sample (often scraped from social media) to clone a victim's voice and stage a fake emergency. Impersonating a real person's voice to deceive a third party into transferring money is identity theft (Section 66C) combined with cheating by personation through a computer/telecom resource (Section 66D).",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. BNS cheating provisions under Section 318 can extend punishment up to 7 years depending on amount involved."
+  },
+  {
+    "id": 105,
+    "situation": "I won an online auction for a vintage watch and paid the seller via bank transfer as instructed, but the seller never shipped the item and disappeared from the platform.",
+    "is_cybercrime": true,
+    "category": "E-commerce / Online Shopping Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "A seller who collects payment through an online platform without any genuine intention to deliver the purchased item has committed cheating via a computer resource under Section 66D of the IT Act, combined with cheating under BNS Section 318.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318: up to 7 years depending on the clause and value involved."
+  },
+  {
+    "id": 106,
+    "situation": "I bought a used car through a classifieds website after personally inspecting it, test-driving it, and verifying the registration documents before paying.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "A transaction where the buyer conducted reasonable due diligence (inspection, test drive, document verification) before a voluntary purchase is a normal, legitimate commercial transaction, regardless of the platform used to find the listing.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 107,
+    "situation": "Someone took control of my business's official Instagram account with 500,000 followers and is demanding Rs. 2 lakh in exchange for returning access, threatening to delete the account otherwise.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)"
+    ],
+    "ipc_sections": [
+      "Section 384 (extortion)",
+      "Section 425/426 (mischief, re: threatened deletion)"
+    ],
+    "bns_sections": [
+      "Section 308 BNS (extortion)",
+      "Section 324 BNS (mischief)"
+    ],
+    "explanation": "This combines unauthorized access/account hijacking under Sections 43 and 66 of the IT Act with extortion under BNS Section 308, since the attacker is using unauthorized control as leverage to coerce a ransom payment.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Extortion under BNS 308: up to 7 years imprisonment along with fine."
+  },
+  {
+    "id": 108,
+    "situation": "A coordinated network of fake social media accounts is spreading fabricated polling data and fake statements attributed to election candidates just before voting day, designed to look like genuine news.",
+    "is_cybercrime": true,
+    "category": "Defamation / Fake News / Impersonation",
+    "it_act_sections": [
+      "Section 66D (cheating by personation, re: fake accounts impersonating real entities)",
+      "IT Rules 2021 (synthetic/misleading content obligations on platforms)"
+    ],
+    "ipc_sections": [
+      "Section 171G (false statements in connection with election, where applicable)",
+      "Section 505 (statements conducing to public mischief)"
+    ],
+    "bns_sections": [
+      "Section 353 BNS (statements conducing to public mischief)"
+    ],
+    "explanation": "Coordinated fake accounts spreading fabricated information designed to influence an election, especially when impersonating real candidates or fabricating attributed statements, can attract Section 66D (personation), public mischief provisions under BNS Section 353, and election-specific offences under the Representation of the People Act, 1951, in addition to platform-level takedown obligations under the IT Rules, 2021.",
+    "punishment": "BNS Section 353: imprisonment up to 3 years, or fine, or both. Election law offences carry separate penalties under the Representation of the People Act, 1951, including potential disqualification for candidates found responsible."
+  },
+  {
+    "id": 109,
+    "situation": "I shared a news article about an upcoming election from a credible, verified mainstream news outlet on my personal social media account with my own honest commentary.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Sharing factual news from a credible, verified source along with one's own genuine commentary is a normal exercise of free expression and civic engagement, not misinformation.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 110,
+    "situation": "I keep receiving hundreds of unsolicited promotional SMS messages daily from various companies despite never having given consent and having registered on the DND (Do Not Disturb) list.",
+    "is_cybercrime": true,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [
+      "IT Act does not directly criminalize spam; primarily governed by TRAI regulations"
+    ],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Unsolicited commercial communication sent despite DND registration is primarily regulated under the Telecom Commercial Communications Customer Preference Regulations (TCCCPR) enforced by TRAI, rather than the IT Act, IPC, or BNS. While not a 'cybercrime' in the traditional sense, repeated violations can result in regulatory penalties against the sender and can be reported through the TRAI DND app or to the telecom operator.",
+    "punishment": "Regulatory penalties under TRAI regulations for senders/telemarketers found in violation, rather than criminal imprisonment; complaints can be filed via the 'DND' app or by sending an SMS to 1909."
+  },
+  {
+    "id": 111,
+    "situation": "A company I'm a registered customer of sends me occasional promotional emails about new products, with a clear and functional unsubscribe link in every email.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Promotional communication sent to existing customers with proper opt-out mechanisms in compliance with applicable regulations is standard, lawful marketing practice.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 112,
+    "situation": "A buyer on an online marketplace asked me to share an OTP to 'verify the transaction' before paying for the item I was selling, and after I shared it, I realized money was deducted from my own account instead of being credited.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66C (identity theft, re: OTP misuse)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a 'reverse OTP' or 'collect request' scam targeting sellers on online marketplaces, where the fraudster disguises a payment-collection request as a payment-receipt verification. The deception is carried out through a computer resource, attracting Section 66D of the IT Act, combined with Section 66C for OTP/credential misuse.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. BNS 318 (cheating): up to 7 years depending on the amount and clause invoked."
+  },
+  {
+    "id": 113,
+    "situation": "I shared an OTP with my bank's official customer care representative after I called the bank's verified number myself to resolve a card issue, as part of their standard identity verification process.",
+    "is_cybercrime": false,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Sharing an OTP with a verified bank representative through a call initiated by the customer themselves to the bank's official number, as part of standard identity verification, is normal and safe banking practice, distinct from sharing an OTP with an unsolicited caller.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 114,
+    "situation": "A hacktivist group defaced our organization's official website, replacing the homepage with political slogans and propaganda images, without authorization.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access and alteration of data)",
+      "Section 66 (computer related offences)",
+      "Section 70 (if the website is a 'protected system' under government notification)"
+    ],
+    "ipc_sections": [
+      "Section 425/426 (mischief)"
+    ],
+    "bns_sections": [
+      "Section 324 BNS (mischief)"
+    ],
+    "explanation": "Unauthorized access to alter or deface a website constitutes a clear violation of Section 43 (unauthorized access and data alteration), punishable under Section 66 of the IT Act. If the targeted website belongs to a critical government or protected system formally notified under Section 70, much more severe penalties under that section apply instead.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Section 70 (protected systems): up to 10 years imprisonment and fine, if applicable."
+  },
+  {
+    "id": 115,
+    "situation": "Someone submitted a fraudulent online insurance claim using my policy number and personal details, which I never authorized, to claim a payout for a fake incident.",
+    "is_cybercrime": true,
+    "category": "Identity Theft / Phishing / Spoofing",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Using another person's policy details and identity to fraudulently file an insurance claim through an online portal is identity theft under Section 66C, combined with cheating by personation through a computer resource under Section 66D.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. BNS cheating provisions can extend punishment further based on claim value."
+  },
+  {
+    "id": 116,
+    "situation": "I filed a genuine insurance claim online for a car accident, submitting accurate photos, the police FIR copy, and repair estimates as required by my insurer.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Filing a truthful, well-documented insurance claim for an actual covered event through the insurer's official online process is normal, lawful policyholder activity.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 117,
+    "situation": "A client on a freelancing platform received my completed project deliverables but then disputed the payment with the platform, falsely claiming the work was never delivered, even though I have timestamped proof of delivery.",
+    "is_cybercrime": true,
+    "category": "Social Engineering / Misc",
+    "it_act_sections": [
+      "Section 66D (if false claims involve fabricated electronic evidence to deceive the platform)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "If a client knowingly makes a false claim to defraud a freelancer of legitimately earned payment, and especially if they fabricate or falsify evidence submitted to the platform's dispute system, this constitutes cheating via a computer resource under Section 66D. However, in many cases such disputes are resolved by the platform's own evidence-based resolution process without rising to a formal criminal complaint, and falls more naturally into a civil/contractual dispute unless clear fraudulent intent and fabrication are demonstrated.",
+    "punishment": "If fraudulent intent is established: up to 3 years imprisonment and fine up to Rs. 1 lakh under Section 66D. Many such disputes are otherwise resolved through the freelancing platform's grievance/arbitration mechanism."
+  },
+  {
+    "id": 118,
+    "situation": "A client and I had a genuine disagreement about whether the final freelance deliverable met the originally agreed scope, and we're working through the platform's standard revision process.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "A genuine, good-faith disagreement about deliverable scope or quality, being resolved through the platform's normal revision and dispute process, is an ordinary contractual matter, not a cyber offence.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 119,
+    "situation": "A website is selling counterfeit prescription medications online, falsely claiming they are genuine, without requiring any valid prescription.",
+    "is_cybercrime": true,
+    "category": "E-commerce / Online Shopping Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation, re: fake legitimacy claims)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)",
+      "Read with Drugs and Cosmetics Act, 1940"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)",
+      "Read with Drugs and Cosmetics Act, 1940"
+    ],
+    "explanation": "Selling counterfeit medications online while falsely representing them as genuine constitutes cheating committed via a computer resource under Section 66D, in addition to serious violations under the Drugs and Cosmetics Act, 1940, which separately and severely penalizes the sale of spurious/counterfeit drugs given the public health risk involved.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. Drugs and Cosmetics Act offences for spurious drugs can carry penalties up to life imprisonment depending on the harm caused."
+  },
+  {
+    "id": 120,
+    "situation": "I ordered genuine over-the-counter medication from a licensed online pharmacy that verified my prescription as required for prescription-only items.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Purchasing genuine medication from a licensed, compliant online pharmacy that follows proper prescription verification protocols is a lawful healthcare transaction.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 121,
+    "situation": "My spouse and I share access to each other's phones and social media accounts by mutual agreement as part of our relationship, and occasionally check each other's messages with consent.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Mutually consensual sharing of access between adults in a relationship, where both parties have knowingly and voluntarily agreed to the arrangement, does not constitute unauthorized access, since consent negates the core element required for an offence under Section 43/66 of the IT Act.",
+    "punishment": "Not applicable - no offence is made out, given mutual, ongoing, voluntary consent."
+  },
+  {
+    "id": 122,
+    "situation": "My spouse secretly installed spyware on my phone to monitor my messages and location without my knowledge, after I had explicitly refused to share that access.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)",
+      "Section 66E (violation of privacy)"
+    ],
+    "ipc_sections": [
+      "Section 354D (stalking, if applicable)"
+    ],
+    "bns_sections": [
+      "Section 78 BNS (stalking, if applicable)"
+    ],
+    "explanation": "Even within a marriage, installing spyware to covertly monitor a spouse's private communications and location without their knowledge or consent, especially after they have explicitly refused such access, constitutes unauthorized access under Sections 43 and 66 and a privacy violation under Section 66E of the IT Act. Marital status does not provide blanket legal immunity for unauthorized surveillance.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Section 66E: up to 3 years and/or fine up to Rs. 2 lakh."
+  },
+  {
+    "id": 123,
+    "situation": "Parents installed a parental control app on their 10-year-old child's tablet to monitor screen time and block inappropriate content, which the child is aware of.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Parental monitoring of a minor child's device for legitimate safety and developmental supervision purposes is a normal and legally recognized exercise of parental responsibility, especially for young children.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 124,
+    "situation": "A company sent me a legitimate password reset confirmation email after I clicked 'forgot password' on their login page myself.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "A password reset confirmation triggered by the account holder's own request through the legitimate recovery flow is standard, expected account security functionality.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 125,
+    "situation": "I received a legal notice via email from a law firm regarding a genuine contractual dispute with a former business associate, which appears to be authentic and properly addressed to me.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Receiving a legitimate legal notice through email regarding an actual dispute is a normal part of legal process and dispute resolution, not a cyber offence.",
+    "punishment": "Not applicable - no offence is made out, though the underlying contractual dispute itself may warrant separate legal consultation."
+  },
+  {
+    "id": 126,
+    "situation": "Someone is selling stolen credit card data ('dumps') on a dark web marketplace, including card numbers and CVVs scraped from a previous data breach.",
+    "is_cybercrime": true,
+    "category": "Identity Theft / Phishing / Spoofing",
+    "it_act_sections": [
+      "Section 43 (unauthorized possession/use of data)",
+      "Section 66 (computer related offences)",
+      "Section 66C (identity theft)"
+    ],
+    "ipc_sections": [
+      "Section 411 (dishonestly receiving stolen property, as applied to data)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 317 BNS (dishonestly receiving stolen property)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Trading in stolen financial credentials is a severe combination of identity theft (Section 66C) and computer-related offences (Section 66) under the IT Act, since the data itself was unlawfully obtained and its further sale/distribution perpetuates the fraud against the original cardholders. This is actively monitored by India's Cyber Crime Coordination Centre (I4C).",
+    "punishment": "Section 66C: up to 3 years imprisonment and fine up to Rs. 1 lakh. Section 66: up to 3 years and/or fine up to Rs. 5 lakh. Receiving stolen property under BNS 317 can attract up to 3 years imprisonment."
+  },
+  {
+    "id": 127,
+    "situation": "A bank's fraud detection system flagged and blocked a genuine large transaction I made, requiring me to call customer care to verify and unblock it.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Standard fraud-prevention measures by a bank that temporarily flag unusual but legitimate transactions for verification are normal security practices designed to protect customers, not a cyber offence.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 128,
+    "situation": "An anonymous Twitter/X account has been posting a coordinated series of threatening messages targeting a specific journalist for her reporting, including threats of sexual violence, over several weeks.",
+    "is_cybercrime": true,
+    "category": "Cyberbullying / Online Harassment / Stalking",
+    "it_act_sections": [
+      "Section 67 (publishing obscene/sexually threatening content electronically, if applicable)",
+      "Section 66E (if private images are also threatened/shared)"
+    ],
+    "ipc_sections": [
+      "Section 354D (stalking)",
+      "Section 506 (criminal intimidation, including for threats of sexual violence which carries enhanced punishment)"
+    ],
+    "bns_sections": [
+      "Section 78 BNS (stalking)",
+      "Section 351 BNS (criminal intimidation)"
+    ],
+    "explanation": "A sustained, coordinated campaign of threats, particularly involving threats of sexual violence against a journalist for their professional work, constitutes serious cyberstalking under BNS Section 78 and criminal intimidation under Section 351, which carries enhanced punishment specifically for threats involving rape or grievous harm.",
+    "punishment": "Stalking under BNS 78: up to 3-5 years imprisonment with fine. Criminal intimidation involving threats of death/grievous hurt/sexual violence under BNS 351: up to 7 years imprisonment, or fine, or both."
+  },
+  {
+    "id": 129,
+    "situation": "I post my opinions about movies and books on a public book-review blog using my real name, and sometimes people disagree with me in the comments respectfully.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Sharing personal opinions publicly and engaging in respectful disagreement in comments is normal, healthy public discourse, not a cyber offence.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 130,
+    "situation": "A fraudulent caller posing as a 'TRAI official' told me my mobile number would be disconnected in 2 hours due to 'illegal activity' unless I pressed 9 to connect to a fake 'cybercrime officer,' who then asked for my banking app screen-share access.",
+    "is_cybercrime": true,
+    "category": "Government Impersonation / Fake Official Communication",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)",
+      "Section 43 (unauthorized access via remote screen-share)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is the 'digital arrest'/fake regulator scam pattern that has become widespread in India, where fraudsters impersonate telecom regulators, police, or cybercrime officials to intimidate victims into granting remote access or transferring funds. This involves cheating by personation of an official authority under Section 66D, and if remote screen-share access is used to view/extract banking data, unauthorized access under Section 43 also applies.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. Section 66: up to 3 years and/or fine up to Rs. 5 lakh. Any resulting cheating under BNS 318 can extend punishment up to 7 years."
+  },
+  {
+    "id": 131,
+    "situation": "I received a call from an actual TRAI customer helpline (which I called myself using the number from their official website) to ask a billing question.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Initiating contact with a genuine regulatory authority's verified helpline, found through their official website, for a legitimate query is normal and safe practice.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 132,
+    "situation": "A scammer created a fake customer support number for a popular e-commerce company and got it to rank high on search engines, so when I searched for the company's support number and called it, the fake agent convinced me to share my card details for a 'refund process.'",
+    "is_cybercrime": true,
+    "category": "Government Impersonation / Fake Official Communication",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is the 'fake customer care number' scam, where fraudsters exploit search engine optimization to plant fake support numbers that rank above genuine ones. Impersonating a legitimate company's customer support to extract financial information is cheating by personation through a computer resource under Section 66D, combined with identity theft under Section 66C.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. BNS cheating provisions under Section 318 can extend punishment based on amount defrauded."
+  },
+  {
+    "id": 133,
+    "situation": "I called the customer support number listed directly on the back of my credit card or on the bank's official app to report a lost card.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Contacting customer support through a number sourced directly from the bank's own card or official app, rather than from a search engine, is the safest and intended way to reach genuine support and poses no risk of impersonation fraud.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 134,
+    "situation": "A fraudster cloned my company's official website pixel-for-pixel on a similar-looking domain and is using it to collect customer payment details, which never reach us.",
+    "is_cybercrime": true,
+    "category": "Identity Theft / Phishing / Spoofing",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Creating a near-identical clone of a legitimate business's website (typosquatting/phishing) to deceive customers into submitting payment information is a clear case of cheating by personation through a computer resource under Section 66D, combined with identity theft under Section 66C for impersonating the brand's digital identity.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. BNS cheating provisions under Section 318 can extend punishment based on amount defrauded from victims."
+  },
+  {
+    "id": 135,
+    "situation": "My company registered a new domain name that closely matches our brand name, having properly purchased and verified it through an accredited domain registrar.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Legitimately purchasing and registering a domain name through proper, accredited channels for one's own business is a normal, lawful business activity.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 136,
+    "situation": "An ex-employee who still had access to our company's shared cloud drive (because IT forgot to revoke it after his exit) logged in and downloaded sensitive financial spreadsheets two months after leaving.",
+    "is_cybercrime": true,
+    "category": "Hacking / Unauthorized Access",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)"
+    ],
+    "ipc_sections": [
+      "Section 379 (theft)",
+      "Section 408 (criminal breach of trust by employee, given prior employment relationship)"
+    ],
+    "bns_sections": [
+      "Section 303 BNS (theft)",
+      "Section 316(3) BNS (criminal breach of trust by employee)"
+    ],
+    "explanation": "Even though the access credentials technically still worked due to an administrative oversight, the former employee no longer had actual authorization to access company systems after termination. Logging in and extracting sensitive data under these circumstances is unauthorized access under Sections 43 and 66 of the IT Act, since authorization is based on the employment relationship, not merely whether credentials happen to still function.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. Criminal breach of trust under BNS 316(3) given the prior position of trust: up to 10 years imprisonment."
+  },
+  {
+    "id": 137,
+    "situation": "I'm a current employee with active, authorized credentials, and I accessed our shared cloud drive to retrieve a report I need for tomorrow's client meeting, as part of my normal job duties.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Accessing company systems within the scope of one's current, authorized job role using valid credentials for legitimate work purposes is entirely normal and lawful employment activity.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 138,
+    "situation": "Someone created a deepfake audio clip of a company's CFO announcing fake bad news about the company to manipulate its stock price before short-selling it.",
+    "is_cybercrime": true,
+    "category": "Deepfakes / AI-Generated Content Misuse",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)",
+      "Section 66 (computer related offences)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)",
+      "Read with SEBI regulations on market manipulation"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)",
+      "Read with SEBI regulations on market manipulation"
+    ],
+    "explanation": "Creating fabricated audio impersonating a company executive to manipulate stock prices is a severe combination of cheating by personation under Section 66D of the IT Act and securities market manipulation, which is separately and heavily penalized under the SEBI Act, 1992, and related regulations given the systemic financial harm involved.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. SEBI Act violations for market manipulation can attract penalties up to Rs. 25 crore or three times the profit made, along with imprisonment up to 10 years under the SEBI Act."
+  },
+  {
+    "id": 139,
+    "situation": "A financial analyst publicly shared their genuine, well-researched opinion that a company's stock is overvalued, based on publicly available financial filings.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Sharing a genuine, well-reasoned investment opinion based on publicly available information is normal financial commentary and analysis, protected as free expression, and is a routine part of financial markets discourse.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 140,
+    "situation": "A fraudulent caller, claiming to represent a popular electricity board, sent me an SMS saying my electricity will be disconnected tonight unless I update my billing details by clicking a link and entering my card information.",
+    "is_cybercrime": true,
+    "category": "Government Impersonation / Fake Official Communication",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a utility-bill phishing scam impersonating an electricity board to create urgency and extract payment card details. This is cheating by personation through a computer resource (SMS/link) under Section 66D, combined with identity theft under Section 66C.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each."
+  },
+  {
+    "id": 141,
+    "situation": "I paid my electricity bill through the utility provider's official mobile app or website, which I accessed directly by typing the official URL myself.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Paying a bill through the provider's official, verified channel that you accessed directly is normal, safe digital bill payment.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 142,
+    "situation": "A group of students used AI chatbots to generate someone else's entire college assignment and submitted it as their own original work without disclosure, violating their institution's academic integrity policy.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "While this is a serious academic integrity violation that an institution may penalize through internal disciplinary action (such as grade penalties, suspension, or expulsion under its academic honesty code), it does not, by itself, constitute a criminal offence under the IT Act, IPC, or BNS, since there's no unauthorized access, fraud against a third party, or data theft involved - this is a matter of institutional policy enforcement.",
+    "punishment": "Not applicable as a cybercrime - this is an academic integrity matter handled through institutional disciplinary processes, not criminal law."
+  },
+  {
+    "id": 143,
+    "situation": "Someone hacked into a school's online portal and leaked the question papers for an upcoming board examination to students in exchange for payment.",
+    "is_cybercrime": true,
+    "category": "Academic / Examination Fraud",
+    "it_act_sections": [
+      "Section 43 (unauthorized access)",
+      "Section 66 (computer related offences)"
+    ],
+    "ipc_sections": [
+      "Section 379 (theft)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 303 BNS (theft)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Unauthorized access to a school's examination portal to steal and sell confidential question papers is a clear violation of Sections 43 and 66 of the IT Act (unauthorized access and data theft), combined with cheating under the BNS for selling the stolen material, and would also constitute an offence under applicable state anti-cheating/exam-leak legislation where such laws exist.",
+    "punishment": "Section 66: up to 3 years imprisonment and/or fine up to Rs. 5 lakh. State-specific exam leak laws (where applicable) often carry significantly higher penalties, sometimes including life imprisonment for organized paper leaks."
+  },
+  {
+    "id": 144,
+    "situation": "A scammer is impersonating a popular cryptocurrency exchange's official support account on Twitter/X (using a similar handle and logo) and replying to customer complaints with phishing links disguised as 'official support.'",
+    "is_cybercrime": true,
+    "category": "Identity Theft / Phishing / Spoofing",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a common 'fake support handle' scam targeting cryptocurrency users, where scammers monitor public complaints and respond with fake support links to phish credentials. This is identity theft (Section 66C) and cheating by personation through a computer resource (Section 66D).",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each."
+  },
+  {
+    "id": 145,
+    "situation": "I contacted a cryptocurrency exchange's support through the verified, blue-checkmarked official account linked directly from their own website.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Reaching out through a verified official channel linked directly from the company's own legitimate website is the safe, intended way to get genuine support.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 146,
+    "situation": "A person created multiple fake LinkedIn profiles claiming to be recruiters from well-known companies to collect resumes, personal details, and bank account information from job seekers under the guise of processing 'joining formalities.'",
+    "is_cybercrime": true,
+    "category": "Social Engineering / Misc",
+    "it_act_sections": [
+      "Section 66C (identity theft)",
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 419 (cheating by personation)",
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 319 BNS (cheating by personation)",
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Creating fake recruiter profiles impersonating real companies to harvest sensitive personal and financial information from job seekers under false pretenses is identity theft under Section 66C combined with cheating by personation through a computer resource under Section 66D.",
+    "punishment": "Section 66C/66D: up to 3 years imprisonment and fine up to Rs. 1 lakh each. BNS cheating provisions can extend further if money was also extracted."
+  },
+  {
+    "id": 147,
+    "situation": "A genuine HR recruiter from a company I applied to contacted me through LinkedIn using their verified profile, which matched the company's official employee directory, to schedule an interview.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Being contacted by a verifiable, genuine recruiter through professional channels for a legitimate interview process is normal job-search activity.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 148,
+    "situation": "Someone is running a fake charity fundraiser online, using real photos of disaster victims without their consent, to solicit donations that are never actually distributed to anyone affected.",
+    "is_cybercrime": true,
+    "category": "Social Engineering / Misc",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)",
+      "Section 66E (unauthorized use of victims' images, if applicable)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "Operating a fraudulent charity campaign that uses real disaster imagery to dishonestly solicit and misappropriate donations is cheating committed via a computer resource under Section 66D of the IT Act, combined with cheating under BNS Section 318. If the victims' images were used without their consent, this also raises privacy concerns under Section 66E.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318 (cheating): up to 7 years depending on amount collected and clause invoked."
+  },
+  {
+    "id": 149,
+    "situation": "I donated to a disaster relief fundraiser run by a registered, well-established NGO with a transparent track record and proper tax-exemption certification.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Donating to a verified, registered charitable organization with established credibility and proper certification is a normal, lawful, and commendable act of charitable giving.",
+    "punishment": "Not applicable - no offence is made out."
+  },
+  {
+    "id": 150,
+    "situation": "A 'recovery agent' contacted me online claiming they can help recover money I previously lost in a different scam, in exchange for an upfront 'processing fee,' but this is itself a secondary scam targeting prior fraud victims.",
+    "is_cybercrime": true,
+    "category": "Social Engineering / Misc",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)"
+    ],
+    "explanation": "This is a recognized 'recovery scam' pattern that specifically re-targets previous fraud victims by promising to recover lost funds for an upfront fee, which is itself a fresh act of cheating committed via a computer resource under Section 66D of the IT Act and BNS Section 318.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318 (cheating): up to 7 years depending on amount and clause invoked."
+  },
+  {
+    "id": 151,
+    "situation": "After losing money to a scam, I filed a complaint through the official National Cybercrime Reporting Portal (cybercrime.gov.in) and the 1930 helpline to seek legitimate recovery assistance.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Reporting fraud through India's official, government-run cybercrime reporting channels is the correct, safe, and recommended course of action for any victim of online fraud.",
+    "punishment": "Not applicable - no offence is made out; this is the recommended remedial action for cybercrime victims."
+  },
+  {
+    "id": 152,
+    "situation": "An online forex/stock trading 'guru' on Telegram promised to multiply my investment using 'insider trading signals' and 'guaranteed profit algorithms,' and after I invested through their app, I could see fake profits accumulating but couldn't withdraw any money.",
+    "is_cybercrime": true,
+    "category": "Financial Fraud / Online Banking Fraud",
+    "it_act_sections": [
+      "Section 66D (cheating by personation using computer resource)"
+    ],
+    "ipc_sections": [
+      "Section 420 (cheating)",
+      "Read with SEBI regulations on unregistered investment advisory"
+    ],
+    "bns_sections": [
+      "Section 318 BNS (cheating)",
+      "Read with SEBI regulations on unregistered investment advisory"
+    ],
+    "explanation": "This is a 'pig butchering' style investment scam pattern, where a fake trading app displays fabricated profits to encourage further deposits, but withdrawals are blocked. This is cheating committed via a computer resource under Section 66D of the IT Act, and operating as an unregistered/unlicensed investment advisor separately violates SEBI regulations.",
+    "punishment": "Section 66D: up to 3 years imprisonment and fine up to Rs. 1 lakh. BNS 318 (cheating): up to 7 years depending on amount and clause invoked. SEBI Act violations carry separate substantial penalties."
+  },
+  {
+    "id": 153,
+    "situation": "I invest in mutual funds and stocks through a SEBI-registered broker using their official app, and I track my portfolio performance regularly.",
+    "is_cybercrime": false,
+    "category": "Not a Cybercrime",
+    "it_act_sections": [],
+    "ipc_sections": [],
+    "bns_sections": [],
+    "explanation": "Investing through a properly licensed, SEBI-registered broker via their official platform is standard, lawful, and regulated investment activity.",
+    "punishment": "Not applicable - no offence is made out."
   }
 ]

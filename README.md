@@ -1,23 +1,22 @@
-# ⚖️ IPC/BNS Legal RAG Assistant
+# ⚖️ Indian Cybercrime Legal RAG Assistant
 
-A Retrieval-Augmented Generation (RAG) system for querying Indian criminal
-law — covering both the **Indian Penal Code (IPC)** and the **Bharatiya
-Nyaya Sanhita (BNS), 2023**, which replaced the IPC. Built in the same
-stack as [PdfTalker](#): LangChain + FAISS + Streamlit, powered by a
-Groq-hosted LLaMA model.
+A Retrieval-Augmented Generation (RAG) system for querying Indian cyber law
+— covering the **Information Technology Act, 2000**, the **Indian Penal Code
+(IPC)**, and the **Bharatiya Nyaya Sanhita (BNS), 2023**, which replaced the
+IPC. Built with LangChain + FAISS + Streamlit, powered by a Groq-hosted
+LLaMA model.
 
-The standout feature: every answer cross-references **both the old IPC
-section and the new BNS section**, addressing a real pain point for
-students, paralegals, and citizens navigating India's 2024 criminal law
-overhaul.
+The standout feature: describe any situation in plain English, and the system
+tells you **whether it's a cybercrime**, which **IT Act / IPC / BNS sections**
+apply, the **explanation**, and the **punishment**.
 
 ## Features
 
-- 🔍 Semantic search over structured legal provisions (not just raw text dumps)
-- ⚖️ IPC ⇄ BNS cross-referencing for every retrieved section
-- 📋 Rich metadata per provision: punishment, cognizability, bailability, trial court
+- 🔍 Semantic search over 153 cybercrime situation entries
+- ⚖️ IT Act + IPC (legacy) + BNS cross-referencing for every retrieved entry
+- 📋 Rich metadata: category, is_cybercrime flag, explanation, punishment
 - 💬 Chat-style interface with example questions and source transparency
-- 🧩 Clean separation of ingestion (`ingest.py`) and inference (`rag_chain.py`) for easy extension
+- 🧩 Clean separation of ingestion (`ingest.py`) and inference (`rag_chain.py`)
 
 ## Project Structure
 
@@ -26,10 +25,11 @@ legal-rag/
 ├── app.py                      # Streamlit UI
 ├── requirements.txt
 ├── data/
-│   └── ipc_bns_sections.json   # Sample/illustrative legal dataset (20 sections)
+│   ├── ipc_bns_sections.json   # 153 cybercrime situation entries
+│   └── faiss_index/            # Built by ingest.py (auto-generated)
 ├── src/
-│   ├── ingest.py                # Builds the FAISS index from the dataset
-│   └── rag_chain.py             # Retrieval + Groq LLM generation chain
+│   ├── ingest.py               # Builds the FAISS index from the dataset
+│   └── rag_chain.py            # Retrieval + Groq LLM generation chain
 └── .streamlit/
     └── config.toml
 ```
@@ -64,22 +64,21 @@ legal-rag/
    streamlit run app.py
    ```
 
-## Using your own data
+## Dataset Schema
 
-The included dataset (`data/ipc_bns_sections.json`) has **20 illustrative
-sections** covering major crime categories (offences against the body,
-property, women, public tranquility, documents, and cyber fraud) — enough
-to demo the system end-to-end, but not the full statutory corpus.
+Each entry in `data/ipc_bns_sections.json` has the following fields:
 
-To scale to the real IPC/BNS text:
-
-1. Source the full text (e.g. from India Code, official gazette PDFs, or a vetted legal dataset).
-2. Reshape it into the same JSON schema used in `ipc_bns_sections.json` — each entry needs `ipc_section`, `bns_section`, `category`, `title`, `text`, `punishment`, `cognizable`, `bailable`, and `triable_by`.
-3. Re-run `python src/ingest.py` to rebuild the FAISS index.
-
-The `ingest.py` pipeline already chunks long text via
-`RecursiveCharacterTextSplitter`, so it will scale cleanly to full-length
-statutory sections without code changes.
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | int | Unique identifier |
+| `situation` | string | Plain-English description of a scenario |
+| `is_cybercrime` | boolean | Whether the situation qualifies as a cybercrime |
+| `category` | string | Category (e.g., "Hacking / Unauthorized Access") |
+| `it_act_sections` | string[] | Applicable IT Act sections |
+| `ipc_sections` | string[] | Applicable IPC sections (legacy) |
+| `bns_sections` | string[] | Applicable BNS sections |
+| `explanation` | string | Legal explanation of why the sections apply |
+| `punishment` | string | Applicable punishments |
 
 ## Disclaimer
 
@@ -92,6 +91,6 @@ actual legal proceedings. Always consult a qualified advocate.
 
 - **LangChain** — RAG orchestration
 - **FAISS** — vector similarity search
-- **sentence-transformers (all-MiniLM-L6-v2)** — local embeddings (free, no API key needed for ingestion)
+- **sentence-transformers (all-MiniLM-L6-v2)** — local embeddings (free, no API key needed)
 - **Groq API (LLaMA-3.3-70B)** — fast, free-tier-friendly LLM inference
 - **Streamlit** — UI

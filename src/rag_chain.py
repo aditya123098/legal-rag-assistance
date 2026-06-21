@@ -1,9 +1,9 @@
 """
 rag_chain.py
 -------------
-Core RAG logic: load the FAISS index, retrieve relevant IPC/BNS sections
+Core RAG logic: load the FAISS index, retrieve relevant legal entries
 for a query, and generate a grounded answer using a Groq-hosted LLaMA
-model (matching the PdfTalker stack).
+model.
 """
 
 import os
@@ -20,17 +20,21 @@ INDEX_PATH = Path(__file__).resolve().parent.parent / "data" / "faiss_index"
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 GROQ_MODEL_NAME = "llama-3.3-70b-versatile"
 
-SYSTEM_PROMPT = """You are a legal research assistant specialized in Indian criminal law, \
-covering both the Indian Penal Code (IPC) and the Bharatiya Nyaya Sanhita (BNS), 2023, \
-which replaced the IPC.
+SYSTEM_PROMPT = """\
+You are a legal research assistant specialized in Indian cyber law and criminal law, \
+covering the Information Technology Act, 2000 (IT Act), the Indian Penal Code (IPC), \
+and the Bharatiya Nyaya Sanhita (BNS), 2023, which replaced the IPC.
 
 Use ONLY the context provided below to answer the question. For every provision you \
-reference, cite both the IPC section and its corresponding BNS section where available, \
-since many users will be unfamiliar with the new BNS numbering.
+reference, cite the applicable IT Act sections, IPC sections (legacy), and BNS sections \
+where available.
 
 Rules:
-- Be precise about punishments, cognizability, bailability, and the trial court where the \
-context provides this information.
+- Analyze the user's situation and determine whether it constitutes a cybercrime or not.
+- If it is a cybercrime, clearly state the applicable legal sections from the IT Act, IPC, \
+and BNS, along with explanations and punishments.
+- If it is NOT a cybercrime, explain why it doesn't qualify as one.
+- Be precise about punishments, applicable sections, and legal reasoning based on the context.
 - If the context does not contain enough information to answer confidently, say so clearly \
 instead of guessing.
 - This tool is for legal research and educational purposes only. Always end substantive \
@@ -53,7 +57,8 @@ PROMPT = ChatPromptTemplate.from_messages(
 def load_vectorstore() -> FAISS:
     if not INDEX_PATH.exists():
         raise FileNotFoundError(
-            f"No FAISS index found at {INDEX_PATH}. Run `python src/ingest.py` first."
+            f"No FAISS index found at {INDEX_PATH}. Run `python src/ingest.py` first "
+            f"to build the vector store from the sample dataset."
         )
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
     return FAISS.load_local(
@@ -66,15 +71,16 @@ def format_docs(docs) -> str:
     blocks = []
     for d in docs:
         m = d.metadata
+        is_crime = "Yes" if m.get("is_cybercrime", False) else "No"
         blocks.append(
-            f"[{m['title']}]\n"
-            f"IPC: {m['ipc_section']} | BNS: {m['bns_section']}\n"
-            f"Category: {m['category']} - {m['subcategory']}\n"
-            f"Punishment: {m['punishment']}\n"
-            f"Cognizable: {'Yes' if m['cognizable'] else 'No'} | "
-            f"Bailable: {'Yes' if m['bailable'] else 'No'} | "
-            f"Triable by: {m['triable_by']}\n"
-            f"Details: {d.page_content}\n"
+            f"[Situation: {m.get('situation', 'N/A')}]\n"
+            f"Category: {m.get('category', 'N/A')}\n"
+            f"Is Cybercrime: {is_crime}\n"
+            f"IT Act Sections: {m.get('it_act_sections', 'None')}\n"
+            f"IPC Sections: {m.get('ipc_sections', 'None')}\n"
+            f"BNS Sections: {m.get('bns_sections', 'None')}\n"
+            f"Explanation: {m.get('explanation', 'N/A')}\n"
+            f"Punishment: {m.get('punishment', 'N/A')}\n"
         )
     return "\n---\n".join(blocks)
 
@@ -123,11 +129,10 @@ def query(question: str, groq_api_key: str | None = None, k: int = 4):
 if __name__ == "__main__":
     import sys
 
-    q = " ".join(sys.argv[1:]) or "What is the punishment for theft?"
+    q = " ".join(sys.argv[1:]) or "Is hacking someone's Instagram account a cybercrime?"
     answer, docs = query(q)
     print(f"\nQ: {q}\n")
     print(f"A: {answer}\n")
-    print("Retrieved sections:")
+    print("Retrieved entries:")
     for d in docs:
-        print(f" - {d.metadata['title']} (IPC {d.metadata['ipc_section']} / "
-              f"BNS {d.metadata['bns_section']})")
+        print(f" - [{d.metadata.get('category', 'N/A')}] {d.metadata.get('situation', 'N/A')[:80]}...")
