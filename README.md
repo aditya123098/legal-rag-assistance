@@ -125,6 +125,49 @@ streamlit run app.py
 
 ---
 
+## ☁️ Deploy on Streamlit Cloud
+
+Deploy this app for free on [Streamlit Community Cloud](https://share.streamlit.io/) in minutes:
+
+### 1️⃣ Push to GitHub
+
+Make sure all files — including `data/faiss_index/` — are committed and pushed:
+
+```bash
+git add -A
+git commit -m "Prepare for Streamlit Cloud deployment"
+git push origin main
+```
+
+### 2️⃣ Deploy on Streamlit Cloud
+
+1. Go to [share.streamlit.io](https://share.streamlit.io/) and sign in with your GitHub account.
+2. Click **"New app"**.
+3. Select your repository (`aditya123098/legal-rag-assistance`), branch `main`, and main file `app.py`.
+4. Click **"Deploy"** — the app will build and go live within a few minutes.
+
+### 3️⃣ Configure Secrets (Optional)
+
+To pre-fill the Groq API key so users don't have to enter it manually:
+
+1. In the Streamlit Cloud dashboard, click the **⋮** menu on your app → **Settings** → **Secrets**.
+2. Add your key:
+
+```toml
+GROQ_API_KEY = "gsk_your_key_here"
+```
+
+> **Note:** The app also supports entering the API key directly in the sidebar, so secrets configuration is optional.
+
+### Live App URL
+
+Once deployed, your app will be available at:
+```
+https://<your-app-name>.streamlit.app
+```
+
+---
+
 ## 📊 Dataset
 
 The dataset contains **153 entries** covering real-world cybercrime scenarios across **12 categories**:

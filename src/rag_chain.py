@@ -6,17 +6,20 @@ for a query, and generate a grounded answer using a Groq-hosted LLaMA
 model.
 """
 
+import json
 import os
 from pathlib import Path
 
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
 
-INDEX_PATH = Path(__file__).resolve().parent.parent / "data" / "faiss_index"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_PATH = BASE_DIR / "data" / "ipc_bns_sections.json"
+INDEX_PATH = BASE_DIR / "data" / "faiss_index"
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 GROQ_MODEL_NAME = "llama-3.3-70b-versatile"
 
@@ -54,16 +57,79 @@ PROMPT = ChatPromptTemplate.from_messages(
 )
 
 
-def load_vectorstore() -> FAISS:
-    if not INDEX_PATH.exists():
+def _auto_build_index():
+    """Auto-build the FAISS index from the dataset if it doesn't exist.
+
+    This is called as a fallback during deployment (e.g. Streamlit Cloud)
+    when the pre-built index is not available.
+    """
+    from langchain.docstore.document import Document
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+    if not DATA_PATH.exists():
         raise FileNotFoundError(
-            f"No FAISS index found at {INDEX_PATH}. Run `python src/ingest.py` first "
-            f"to build the vector store from the sample dataset."
+            f"Dataset not found at {DATA_PATH}. Cannot auto-build the FAISS index."
         )
-    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
-    return FAISS.load_local(
-        str(INDEX_PATH), embeddings, allow_dangerous_deserialization=True
+
+    with open(DATA_PATH, "r", encoding="utf-8") as f:
+        sections = json.load(f)
+
+    docs = []
+    for sec in sections:
+        it_act_str = "; ".join(sec.get("it_act_sections", []))
+        ipc_str = "; ".join(sec.get("ipc_sections", []))
+        bns_str = "; ".join(sec.get("bns_sections", []))
+
+        page_content = (
+            f"Situation: {sec['situation']}\n"
+            f"Category: {sec['category']}\n"
+            f"Is Cybercrime: {'Yes' if sec.get('is_cybercrime', False) else 'No'}\n"
+            f"IT Act Sections: {it_act_str or 'None'}\n"
+            f"IPC Sections: {ipc_str or 'None'}\n"
+            f"BNS Sections: {bns_str or 'None'}\n"
+            f"Explanation: {sec['explanation']}\n"
+            f"Punishment: {sec['punishment']}"
+        )
+
+        metadata = {
+            "id": sec["id"],
+            "situation": sec["situation"],
+            "is_cybercrime": sec.get("is_cybercrime", False),
+            "category": sec["category"],
+            "it_act_sections": it_act_str,
+            "ipc_sections": ipc_str,
+            "bns_sections": bns_str,
+            "explanation": sec["explanation"],
+            "punishment": sec["punishment"],
+        }
+        docs.append(Document(page_content=page_content, metadata=metadata))
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1200,
+        chunk_overlap=150,
+        separators=["\n\n", "\n", ". ", " "],
     )
+    chunks = splitter.split_documents(docs)
+
+    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+    vectorstore = FAISS.from_documents(chunks, embeddings)
+
+    os.makedirs(INDEX_PATH, exist_ok=True)
+    vectorstore.save_local(str(INDEX_PATH))
+    return vectorstore
+
+
+def load_vectorstore() -> FAISS:
+    """Load the FAISS index, auto-building it from the dataset if missing."""
+    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+
+    if INDEX_PATH.exists() and (INDEX_PATH / "index.faiss").exists():
+        return FAISS.load_local(
+            str(INDEX_PATH), embeddings, allow_dangerous_deserialization=True
+        )
+
+    # Auto-build fallback (useful for Streamlit Cloud cold starts)
+    return _auto_build_index()
 
 
 def format_docs(docs) -> str:

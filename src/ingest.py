@@ -19,7 +19,7 @@ from pathlib import Path
 from langchain.docstore.document import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "ipc_bns_sections.json"
 INDEX_PATH = Path(__file__).resolve().parent.parent / "data" / "faiss_index"

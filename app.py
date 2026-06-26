@@ -31,10 +31,19 @@ with st.sidebar:
     )
 
     st.markdown("---")
+
+    # Read API key from: sidebar input > Streamlit secrets > env var
+    default_key = os.environ.get("GROQ_API_KEY", "")
+    if not default_key:
+        try:
+            default_key = st.secrets.get("GROQ_API_KEY", "")
+        except FileNotFoundError:
+            default_key = ""
+
     api_key_input = st.text_input(
         "Groq API Key",
         type="password",
-        value=os.environ.get("GROQ_API_KEY", ""),
+        value=default_key,
         help="Get a free key at console.groq.com. Used only for this session.",
     )
     top_k = st.slider("Entries to retrieve (k)", min_value=1, max_value=8, value=4)
