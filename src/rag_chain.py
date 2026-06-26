@@ -13,9 +13,9 @@ from pathlib import Path
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema.runnable import RunnablePassthrough
-from langchain.schema.output_parser import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_PATH = BASE_DIR / "data" / "ipc_bns_sections.json"
@@ -63,8 +63,8 @@ def _auto_build_index():
     This is called as a fallback during deployment (e.g. Streamlit Cloud)
     when the pre-built index is not available.
     """
-    from langchain.docstore.document import Document
-    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    from langchain_core.documents import Document
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
 
     if not DATA_PATH.exists():
         raise FileNotFoundError(
